@@ -248,7 +248,8 @@
           }
           i {
             font-size: $navbar-icon-font-size;
-            color: $navbar-menu-icon-color;
+            // color: $navbar-menu-icon-color;
+            color: rgb(33, 133, 226);
           }
         }
         &.dropdown {

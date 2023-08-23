@@ -1,22 +1,22 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-    <a class="navbar-brand brand-logo" href="index.html"> <span class="text-white font-weight-normal" >MEDKEY</span> 
-      <!-- <img src="assets/images/logo.svg" alt="logo" class="logo-dark" /> -->
+    <a class="navbar-brand brand-logo" href="index.html"> <span class="text-white font-weight-bold" style="font-size:30px" ><span style="color:rgb(49, 121, 246)">MED</span> <span style="color:rgb(216, 31, 31)">KEY</span> </span> 
+      <!-- <img src="assets/images/logo.png" alt="logo" class="logo-dark" /> -->
       <!-- <img src="assets/images/logo-light.svg" alt="logo-light" class="logo-light"> -->
     </a>
-    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize" (click)="toggleSidebar()">
       <span class="icon-menu"></span>
     </button>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-center">
-    <h5 class="mb-0 font-weight-medium d-none d-lg-flex" translate >Welcome Medkey dashboard!</h5>
+    <!-- <h5 class="mb-0 font-weight-medium d-none d-lg-flex" translate >Welcome Medkey dashboard!</h5> -->
     <ul class="navbar-nav navbar-nav-right">
-      <form class="search-form d-none d-md-block" action="#">
+      <!-- <form class="search-form d-none d-md-block" action="#">
         <i class="icon-magnifier"></i>
         <input type="search" class="form-control" placeholder="{{'Search Here' | translate }}" title="{{'Search Here' | translate }}">
-      </form>
-      <li class="nav-item"><a href="#" class="nav-link"><i class="icon-basket-loaded"></i></a></li>
+      </form> -->
+      <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="icon-basket-loaded"></i></a></li>
       <li class="nav-item"><a href="#" class="nav-link"><i class="icon-chart"></i></a></li>
       <li class="nav-item dropdown" ngbDropdown>
         <a class="nav-link count-indicator message-dropdown" id="messageDropdown" aria-expanded="false" ngbDropdownToggle>
@@ -72,21 +72,21 @@
           <a class="dropdown-item">
             <i class="flag-icon flag-icon-ru"></i> <span translate >Russian</span> </a>
         </div>
-      </li>
+      </li> -->
       <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown" ngbDropdown>
         <a class="nav-link dropdown-toggle" id="UserDropdown" ngbDropdownToggle aria-expanded="false">
-          <img class="img-xs rounded-circle ml-2" src="assets/images/faces/face8.jpg" alt="Profile image"> <span class="font-weight-normal"> Henry Klein </span></a>
+          <img class="img-xs rounded-circle ml-2" src="assets/images/faces/face6.jpg" alt="Profile image"> <span class="font-weight-normal">Admin Admin</span></a>
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" ngbDropdownMenu aria-labelledby="UserDropdown">
           <div class="dropdown-header text-center">
-            <img class="img-md rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image">
-            <p class="mb-1 mt-3">Henry Klein</p>
+            <img class="img-md rounded-circle" src="assets/images/faces/face6.jpg" alt="Profile image">
+            <p class="mb-1 mt-3">Admin Admin</p>
             <p class="font-weight-light text-muted mb-0">medkey@gmail.com</p>
           </div>
           <a class="dropdown-item"><i class="dropdown-item-icon icon-user text-primary"></i> <span translate>My Profile</span> <span class="badge badge-pill badge-danger">1</span></a>
           <a class="dropdown-item"><i class="dropdown-item-icon icon-speech text-primary"></i> <span translate>Messages</span></a>
           <a class="dropdown-item"><i class="dropdown-item-icon icon-energy text-primary"></i> <span translate>Activity</span></a>
-          <a class="dropdown-item"><i class="dropdown-item-icon icon-question text-primary"></i> <span translate>FAQ</span></a>
-          <a class="dropdown-item"><i class="dropdown-item-icon icon-power text-primary"></i><span translate>Sign Out</span></a>
+          <!-- <a class="dropdown-item"><i class="dropdown-item-icon icon-question text-primary"></i> <span translate>FAQ</span></a> -->
+          <a class="dropdown-item"><i class="dropdown-item-icon icon-power text-primary"></i><span translate>Déconnexion</span></a>
         </div>
       </li>
     </ul>

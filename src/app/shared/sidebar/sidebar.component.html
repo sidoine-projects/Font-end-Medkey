@@ -38,52 +38,66 @@
         <i class="icon-screen-desktop menu-icon"></i>
       </a>
     </li>
-    <!-- <li class="nav-item nav-category">
+
+    <li class="nav-item nav-category">
       <span class="nav-link" translate>Gestion des utilisateurs</span>
     </li>
 
-    <li
-      class="nav-item"
-      [ngClass]="{ active: formulaire.isActive || branche.isActive }"
-    >
-      <a
-        class="nav-link"
-        (click)="formulaireCollapsed = !formulaireCollapsed"
-        [attr.aria-expanded]="formulaireCollapsed"
-        aria-controls="formulaire"
-      >
+    <!-- <li class="nav-item" [ngClass]="{ 'active' : formulaire.isActive  || branche.isActive }">
+      <a class="nav-link" (click)="formulaireCollapsed = !formulaireCollapsed"
+        [attr.aria-expanded]="formulaireCollapsed" aria-controls="formulaire">
         <span class="menu-title" translate>Utilisateurs</span>
         <i class="icon-book-open menu-icon"></i>
       </a>
-      <div
-        class="collapse"
-        id="formulaire"
-        [ngbCollapse]="!formulaireCollapsed"
-      >
+      <div class="collapse" id="formulaire" [ngbCollapse]="!formulaireCollapsed">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/formulaire"
-              routerLinkActive="active"
-              #formulaire="routerLinkActive"
-            >
-              Utilisateur</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/branche"
-              routerLinkActive="active"
-              #branche="routerLinkActive"
-            >
-              Liste utilisateur</a
-            >
-          </li>
+          <li class="nav-item"><a class="nav-link" routerLink="/formulaire" routerLinkActive="active"
+              #formulaire="routerLinkActive"> Utilisateur</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/formulaire" routerLinkActive="active"
+              #branche="routerLinkActive">  Liste utilisateur</a></li>
+      
         </ul>
       </div>
     </li> -->
+
+    <li class="nav-item" [ngClass]="{ active: formulaire.isActive }">
+      <a
+        class="nav-link"
+        routerLink="/user"
+        routerLinkActive
+        #formulaire="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="menu-title" translate>Utilisateur</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: role.isActive }">
+      <a
+        class="nav-link"
+        routerLink="/role-user"
+        routerLinkActive
+        #role="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="menu-title" translate>Role</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: privilege - user.isActive }">
+      <a
+        class="nav-link"
+        routerLink="/ privilege-user"
+        routerLinkActive
+        #privilege-user="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="menu-title" translate> Privilège utilisateur</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
 
     <!-- 
     <li class="nav-item" [ngClass]="{'active' : buttons.isActive || dropdowns.isActive || typography.isActive }">
@@ -156,81 +170,21 @@
       <span class="nav-link" translate>Configuration </span>
     </li>
 
-    <li
-      class="nav-item"
-      [ngClass]="{
-        active:
-          formulaire.isActive ||
-          typevisite.isActive ||
-          typerelation.isActive ||
-          bio.isActive ||
-          emplacement.isActive
-      }"
-    >
-      <a
-        class="nav-link"
-        (click)="formulaireCollapsed = !formulaireCollapsed"
-        [attr.aria-expanded]="formulaireCollapsed"
-        aria-controls="formulaire"
-      >
+    <!-- <li class="nav-item" [ngClass]="{ 'active' : departement.isActive  || branche.isActive }">
+      <a class="nav-link" (click)="configurationCollapsed = !configurationCollapsed"
+        [attr.aria-expanded]="configurationCollapsed" aria-controls="formulaire">
         <span class="menu-title" translate>Paramètre</span>
         <i class="icon-book-open menu-icon"></i>
       </a>
-      <div class="collapse" id="ormulaire" [ngbCollapse]="!formulaireCollapsed">
+      <div class="collapse" id="configuration" [ngbCollapse]="!configurationCollapsed">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/formulaire"
-              routerLinkActive="active"
-              #formulaire="routerLinkActive"
-            >
-              Département</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/typevisite"
-              routerLinkActive="active"
-              #typevisite="routerLinkActive"
-            >
-              Type de visite</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/typerelation"
-              routerLinkActive="active"
-              #typerelation="routerLinkActive"
-            >
-              Type de relation</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/bio"
-              routerLinkActive="active"
-              #bio="routerLinkActive"
-            >
-              Champs bio étendus
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="basic-elements/emplacement"
-              routerLinkActive="active"
-              #emplacement="routerLinkActive"
-            >
-              Emplacement
-            </a>
-          </li>
+          <li class="nav-item"><a class="nav-link" routerLink="basic-elements/formulaire" routerLinkActive="active"
+              #formulaire="routerLinkActive"> Département</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="basic-elements/branche" routerLinkActive="active"
+              #branche="routerLinkActive"> Branche</a></li>
         </ul>
       </div>
-    </li>
+    </li> -->
 
     <!-- <li class="nav-item" [ngClass]="{ 'active' : login.isActive || register.isActive }">
       <a class="nav-link" (click)="userPagesCollapsed = !userPagesCollapsed" [attr.aria-expanded]="userPagesCollapsed"

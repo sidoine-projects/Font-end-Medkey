@@ -28,7 +28,7 @@ const routes: Routes = [
       import("./tables/tables.module").then((m) => m.TablesModule),
   },
   {
-    path: "basic-elements",
+    path: "",
     loadChildren: () =>
       import("./pages/basic-elements/formulaire.module").then(
         (m) => m.FormulaireModule
