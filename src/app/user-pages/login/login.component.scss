@@ -1,19 +1,73 @@
+// .auth-container {
+//   min-height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .auth-form-light {
+//   background-color: #f5f5f5;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   color: #333;
+// }
+
+// .brand-logo h1 {
+//   // color: #053e7a;
+//   color: #064970;
+//   // color: #1bdbe0 !important; /* Vert pastel plus foncé */
+// }
+
+// .font-weight-light {
+//   font-weight: 300;
+// }
+
+// .form-control {
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+// }
+
+// .form-group {
+//   margin-bottom: 20px;
+// }
+
+// .btn-primary {
+//   background-color: #064970;
+//   // background-color: #1bdbe0;
+//   border: none;
+// }
+
+// .auth-form-btn {
+//   color: #fff;
+// }
+
+// .my-2 {
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
+
+/* CSS pour rendre le logo responsive */
 .auth-container {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.brand-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand-logo img {
+  max-width: 77%;
+  height: auto;
+}
+
 .auth-form-light {
   background-color: #f5f5f5;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #333;
-}
-
-.brand-logo h1 {
-  //   color: #007bff;
-  color: #1bdbe0 !important; /* Vert pastel plus foncé */
 }
 
 .font-weight-light {
@@ -30,8 +84,7 @@
 }
 
 .btn-primary {
-  //   background-color: #007bff;
-  background-color: #1bdbe0;
+  background-color: #064970;
   border: none;
 }
 
@@ -42,4 +95,11 @@
 .my-2 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* Média query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .brand-logo {
+    margin-bottom: 10px;
+  }
 }

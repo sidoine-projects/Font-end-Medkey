@@ -197,7 +197,11 @@
     <li
       class="nav-item"
       [ngClass]="{
-        active: login.isActive || register.isActive || forgetpassword.isActive
+        active:
+          login.isActive ||
+          register.isActive ||
+          forgetpassword.isActive ||
+          resetpassword.isActive
       }"
     >
       <a
@@ -242,6 +246,17 @@
               translate
             >
               Forgetpassword
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="user-pages/resetpassword"
+              routerLinkActive="active"
+              #resetpassword="routerLinkActive"
+              translate
+            >
+              Resetpassword
             </a>
           </li>
         </ul>

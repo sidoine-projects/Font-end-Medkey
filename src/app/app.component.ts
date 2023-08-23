@@ -37,6 +37,8 @@ export class AppComponent implements OnInit {
           event["url"] == "/user-pages/login" ||
           event["url"] == "/user-pages/login-2" ||
           event["url"] == "/user-pages/register" ||
+          event["url"] == "/user-pages/forgetpassword" ||
+          event["url"] == "/user-pages/resetpassword" ||
           event["url"] == "/user-pages/register-2" ||
           event["url"] == "/user-pages/lock-screen" ||
           event["url"] == "/error-pages/404" ||

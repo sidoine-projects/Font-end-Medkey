@@ -2,10 +2,10 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-resetpassword",
-  templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.scss"],
+  templateUrl: "./resetpassword.component.html",
+  styleUrls: ["./resetpassword.component.scss"],
 })
-export class LoginComponent implements OnInit {
+export class ResetPasswordComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
