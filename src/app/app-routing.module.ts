@@ -2,8 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
-  // { path: "", redirectTo: "/dashboard", pathMatch: "full" },
-  { path: "", redirectTo: "/user-pages/login", pathMatch: "full" },
+  { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   {
     path: "dashboard",
     loadChildren: () =>
@@ -28,6 +27,14 @@ const routes: Routes = [
     loadChildren: () =>
       import("./tables/tables.module").then((m) => m.TablesModule),
   },
+  {
+    path: "basic-elements",
+    loadChildren: () =>
+      import("./pages/basic-elements/formulaire.module").then(
+        (m) => m.FormulaireModule
+      ),
+  },
+
   {
     path: "icons",
     loadChildren: () =>
