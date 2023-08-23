@@ -6,6 +6,8 @@ import { ChartistModule } from 'ng-chartist';
 import { DashboardComponent } from './dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+// import { FormulaireModule } from '../pages/basic-elements/formulaire.module';
+
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
@@ -26,6 +28,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
+    // FormulaireModule,
     RouterModule.forChild(routes),
     HttpClientModule,
     ChartsModule,

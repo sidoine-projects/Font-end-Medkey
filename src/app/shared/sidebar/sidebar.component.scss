@@ -1,6 +1,7 @@
 /* Sidebar */
 
 @import '../../../styles.scss';
+
 .sidebar {
   min-height: calc(100vh - #{$navbar-height});
   background: $sidebar-dark-bg;
@@ -25,10 +26,11 @@
     }
 
     .nav-item {
-      padding:0 $sidebar-menu-padding-x;
+      padding: 0 $sidebar-menu-padding-x;
       @include transition-duration(0.25s);
       transition-property: background;
       -webkit-transition-property: background;
+
       .collapse {
         z-index: 999;
       }
@@ -37,7 +39,7 @@
         @include display-flex;
         @include align-items(center);
         white-space: nowrap;
-        padding:$sidebar-menu-padding-y 0 $sidebar-menu-padding-y 0;
+        padding: $sidebar-menu-padding-y 0 $sidebar-menu-padding-y 0;
         color: $sidebar-dark-menu-color;
         @include transition-duration(0.45s);
         transition-property: color;
@@ -52,11 +54,14 @@
             font-size: $sidebar-icon-font-size;
             line-height: 1;
             margin-left: auto;
+
             :host-context(.rtl) & {
               margin-left: 0;
               margin-right: auto;
             }
+
             color: $sidebar-dark-menu-icon-color;
+
             &:before {
               vertical-align: middle;
             }
@@ -76,39 +81,43 @@
           margin-left: 1rem;
         }
 
-        &[aria-expanded="true"]{
-          .menu-arrow{
-            &:before{
+        &[aria-expanded="true"] {
+          .menu-arrow {
+            &:before {
               content: "\f140";
             }
           }
         }
       }
 
-      &.active:not(.navbar-brand-mini-wrapper){
+      &.active:not(.navbar-brand-mini-wrapper) {
         background: $sidebar-dark-menu-active-bg;
-        > .nav-link {
+
+        >.nav-link {
           border-top: none;
+
           .menu-title {
             color: $sidebar-dark-menu-active-color;
-            font-family: $type1;       
-            font-weight: $font-weight-medium;     
+            font-family: $type1;
+            font-weight: $font-weight-medium;
           }
+
           i {
             color: theme-color(success);
           }
         }
 
-        & + .nav-item {
+        &+.nav-item {
           .nav-link {
             border-top: none;
           }
         }
       }
 
-      &:not(.nav-category):not(.nav-profile):hover{
+      &:not(.nav-category):not(.nav-profile):hover {
         background: $sidebar-dark-menu-hover-bg;
       }
+
       &.nav-profile {
         max-width: 270px;
         margin-top: 10px;
@@ -128,11 +137,12 @@
               margin-left: 15px;
             }
           }
+
           .dot-indicator {
             position: absolute;
             top: 50%;
             right: 0px;
-            transform: translate(50%,-50%);
+            transform: translate(50%, -50%);
             width: 7px;
             height: 7px;
             border-radius: 50%;
@@ -140,7 +150,7 @@
             :host-context(.rtl) & {
               left: 0;
               right: auto;
-              transform: translate(-50%,-50%); 
+              transform: translate(-50%, -50%);
             }
           }
 
@@ -157,7 +167,7 @@
             font-size: 12px;
           }
 
-          .icon-container{
+          .icon-container {
             font-size: 16px;
             position: relative;
             color: $sidebar-dark-menu-icon-color;
@@ -173,17 +183,19 @@
               margin-right: auto;
             }
 
-            .dot-indicator{
+            .dot-indicator {
               top: 0;
               transform: none;
               color: $sidebar-dark-menu-icon-color;
             }
           }
         }
+
         :host-context(.sidebar-icon-only) & {
           display: none;
         }
       }
+
       &.nav-category {
         color: $sidebar-nav-category-color;
         font-size: 13px;
@@ -194,14 +206,14 @@
           border: none;
         }
 
-        & ~ .nav-category {
+        &~.nav-category {
 
-          .nav-link{
+          .nav-link {
             border-top: 1px solid $sidebar-nav-link-border-color;
           }
         }
 
-        .nav-link{
+        .nav-link {
           color: inherit;
           padding: $sidebar-nav-category-padding;
 
@@ -209,10 +221,12 @@
             color: inherit;
           }
         }
+
         :host-context(.sidebar-icon-only) & {
           display: none;
         }
       }
+
       &.pro-upgrade {
         &:hover {
           background-color: transparent;
@@ -222,6 +236,7 @@
           }
         }
       }
+
       &.navbar-brand-mini-wrapper {
         display: none;
 
@@ -242,23 +257,25 @@
     }
 
     &:not(.sub-menu) {
-      > .nav-item {
+      >.nav-item {
         &:hover {
           &:not(.nav-category):not(.nav-profile) {
-            > .nav-link {
+            >.nav-link {
               color: $sidebar-dark-menu-hover-color;
             }
           }
         }
       }
     }
+
     &.sub-menu {
       margin-bottom: 20px;
-      margin-top:0;
+      margin-top: 0;
       list-style: none;
 
       .nav-item {
         padding: 0;
+
         .nav-link {
           color: $sidebar-dark-submenu-color;
           padding: $sidebar-submenu-item-padding;
@@ -267,30 +284,36 @@
           line-height: 1;
           height: auto;
           border-top: 0;
+
           &:before {
             content: "\e606";
             font-family: "simple-line-icons";
             display: block;
             position: absolute;
-            left:0px;
+            left: 0px;
+
             :host-context(.rtl) & {
               content: "\e605";
               left: auto;
               right: 0;
             }
+
             top:50%;
             @include transform(translateY(-50%));
             color: lighten($sidebar-light-submenu-color, 10%);
             font-size: .75rem;
           }
+
           &.active {
             color: $sidebar-light-menu-active-color;
             background: transparent;
           }
+
           &:hover {
             color: $sidebar-light-submenu-hover-color;
           }
         }
+
         &:hover {
           background: transparent;
         }
@@ -304,9 +327,11 @@
   @media (min-width: 992px) {
     .sidebar {
       width: $sidebar-width-mini;
+
       .nav {
         .nav-item {
           padding: 0;
+
           .nav-link {
             @include display-flex;
             @include align-items(center);
@@ -315,21 +340,25 @@
             text-align: center;
             position: relative;
             border-bottom: none;
+
             .menu-title {
               display: block;
               margin: auto;
             }
+
             .badge {
               margin-left: 5px;
               display: none;
             }
+
             i {
               &.menu-icon {
-                display:block;
+                display: block;
                 margin-right: auto;
                 margin-left: auto;
                 margin-bottom: .625rem;
               }
+
               &.menu-arrow {
                 display: inline-block;
                 margin-left: 5px;
@@ -341,6 +370,7 @@
             }
           }
         }
+
         &.sub-menu {
           .nav-item {
             &::before {
@@ -354,12 +384,14 @@
 }
 
 :host-context(.sidebar-mini:not(.sidebar-icon-only)) {
+
   //Apply these styles only when sidebar-mini is not collapsed to icon-only mode
   .sidebar {
     .nav {
       &.sub-menu {
         padding: 0;
         border-top: none;
+
         .nav-item {
           .nav-link {
             padding: .75rem 0 .75rem 1.25rem;
@@ -383,46 +415,57 @@
   @media(min-width: 992px) {
     .sidebar {
       width: $sidebar-width-icon;
+
       .nav {
         overflow: visible;
         margin-left: 0;
         margin-right: 0;
+
         .nav-item {
           padding: 0 1rem;
           position: relative;
+
           .nav-link {
             display: block;
             padding-left: .5rem;
-            padding-right: .5rem;            
+            padding-right: .5rem;
             text-align: center;
             position: static;
+
             .menu-title,
-            .badge,.menu-sub-title {
+            .badge,
+            .menu-sub-title {
               display: none;
             }
+
             .menu-title {
               @include border-radius(0 5px 5px 0px);
               background: $sidebar-dark-menu-hover-bg;
             }
+
             i {
               &.menu-icon {
                 margin-right: 0;
                 margin-left: 0;
                 margin-bottom: 0;
               }
+
               &.menu-arrow {
                 display: none;
               }
             }
+
             &[aria-expanded] {
               .menu-title {
                 @include border-radius(0 5px 0 0px);
               }
             }
           }
+
           .collapse {
             display: none;
           }
+
           &.hover-open {
             .nav-link {
               .menu-title {
@@ -439,12 +482,14 @@
                 z-index: 1;
                 line-height: 1.8;
                 -webkit-box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);
-                        box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);              
+                box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);
+
                 &:after {
                   display: none;
                 }
               }
             }
+
             .collapse,
             .collapsing {
               display: block;
@@ -454,26 +499,31 @@
               left: $sidebar-width-icon;
               width: $icon-only-collapse-width;
               -webkit-box-shadow: 4px 4px 7px 0px rgba(182, 185, 189, 0.25);
-                      box-shadow: 4px 4px 7px 0px rgba(182, 185, 189, 0.25);
+              box-shadow: 4px 4px 7px 0px rgba(182, 185, 189, 0.25);
             }
           }
+
           &.nav-profile {
             padding: 0 .3rem;
+
             .nav-link {
               .nav-profile-text {
                 display: none;
               }
+
               .nav-profile-badge {
                 display: none;
               }
             }
           }
         }
+
         &:not(.sub-menu) {
           .nav-item {
             &.active {
               border-radius: 0;
             }
+
             &:hover {
               .nav-link {
                 border-radius: 0;
@@ -481,8 +531,10 @@
             }
           }
         }
+
         &.sub-menu {
           padding: $sidebar-icon-only-submenu-padding;
+
           .nav-item {
             .nav-link {
               text-align: left;
@@ -494,29 +546,36 @@
     }
   }
 }
+
 // Sidebar icon only layout end
 
 //sidebar light start
 :host-context(.sidebar-light) {
   .sidebar {
     background: $sidebar-light-bg;
+
     .nav {
       .nav-item {
         .nav-link {
           color: $sidebar-light-menu-color;
+
           i {
             color: inherit;
+
             &.menu-icon {
               color: $sidebar-light-menu-icon-color;
             }
+
             &.menu-arrow {
               color: $sidebar-light-menu-arrow-color;
-              &:before{
+
+              &:before {
                 color: inherit;
               }
             }
           }
         }
+
         &.hover-open {
           .nav-link {
             .menu-title {
@@ -524,55 +583,67 @@
             }
           }
         }
+
         &.active {
           background: $sidebar-light-menu-active-bg;
-          > .nav-link {
+
+          >.nav-link {
             .menu-title {
               color: $sidebar-light-menu-active-color;
             }
+
             i {
               color: theme-color(success);
             }
           }
         }
+
         &:hover {
           background: $sidebar-light-menu-hover-bg;
         }
+
         &.sidebar-actions {
           &:hover {
             background: initial;
+
             .nav-link {
               color: initial;
             }
           }
         }
       }
+
       &:not(.sub-menu) {
-        > .nav-item {
+        >.nav-item {
           &:hover {
             &:not(.nav-category):not(.nav-profile) {
-              > .nav-link {
+              >.nav-link {
                 color: $sidebar-light-menu-hover-color;
               }
             }
           }
         }
       }
+
       &.sub-menu {
         .nav-item {
           .nav-link {
             color: $sidebar-light-submenu-color;
+
             &:before {
               color: lighten($sidebar-light-submenu-color, 10%);
             }
+
             &.active {
               color: $sidebar-light-menu-active-color;
               background: transparent;
             }
+
             &:hover {
               color: $sidebar-light-submenu-hover-color;
             }
           }
+
           &:hover {
             background: transparent;
           }
@@ -585,6 +656,7 @@
 :host-context(.sidebar-icon-only.sidebar-light) {
   .sidebar {
     background: $icon-only-menu-bg-light;
+
     .nav {
       .nav-item {
         .nav-link {
@@ -592,19 +664,23 @@
             background: $sidebar-light-menu-hover-bg;
           }
         }
+
         &.hover-open {
+
           .collapse,
           .collapsing {
             background: $icon-only-menu-bg-light;
           }
         }
       }
+
       .sub-menu {
         background: $icon-only-menu-bg-light;
       }
     }
   }
 }
+
 //sidebar light end
 :host-context(.sidebar-icon-only.rtl) {
   .sidebar {
@@ -615,6 +691,7 @@
             left: auto;
             right: $sidebar-width-icon
           }
+
           .collapse,
           .collapsing {
             left: auto;
@@ -622,6 +699,7 @@
           }
         }
       }
+
       .sub-menu {
         padding-left: 0;
         padding-right: 1.5rem;
@@ -631,19 +709,29 @@
 }
 
 :host-context(.sidebar-fixed) {
+
+  // cibler le descendant de app
   @media(min-width: 992px) {
     .sidebar {
       position: fixed;
       max-height: auto;
 
+
+
       .nav {
         max-height: calc(100vh - #{$navbar-height});
-        overflow: auto;
+        // overflow: auto;
         position: relative;
+
+        overflow: hidden;
+        /* Masque la barre de défilement */
+        // margin-right: -15px; /* Compense la largeur ajoutée par le défilement vertical masqué */
+
 
         &.sub-menu {
           max-height: none;
         }
+
         &:not(.sub-menu) {
           padding-bottom: 3rem;
         }
@@ -695,6 +783,7 @@
     -webkit-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
+
     &.active {
       right: 0;
     }

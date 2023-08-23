@@ -9,14 +9,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChartsModule } from 'ng2-charts';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { FormulaireModule } from './pages/basic-elements/formulaire.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+// import { FormulaireComponent } from './pages/basic-elements/form/basic-elements.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { SettingsPanelComponent } from './shared/settings-panel/settings-panel.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
+// import { BrancheComponent } from './pages/form/branche/branche.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,10 +31,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     SidebarComponent,
+    // FormulaireComponent,
     SettingsPanelComponent,
     FooterComponent,
     SpinnerComponent,
-    ContentAnimateDirective
+    ContentAnimateDirective,
+    // BrancheComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgbModule,
     BrowserAnimationsModule,
     FormsModule,
+    // FormulaireModule,
     ReactiveFormsModule,
     ChartsModule,
     TranslateModule.forRoot({
