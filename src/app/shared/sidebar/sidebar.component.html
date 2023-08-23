@@ -73,8 +73,8 @@
     </li>
 
     
-    <li class="nav-item" [ngClass]="{ 'active': privilege-user.isActive }">
-      <a class="nav-link" routerLink="/ privilege-user" routerLinkActive #privilege-user="routerLinkActive"
+    <li class="nav-item" [ngClass]="{ 'active': privilegeUser.isActive }">
+      <a class="nav-link" routerLink="/privilege-user" routerLinkActive #privilegeUser="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate> Privilège utilisateur</span>
@@ -82,42 +82,7 @@
       </a>
     </li>
 
-    
-
-
-
-<!-- 
-    <li class="nav-item" [ngClass]="{'active' : buttons.isActive || dropdowns.isActive || typography.isActive }">
-      <a class="nav-link" (click)="uiBasicCollapsed = !uiBasicCollapsed" [attr.aria-expanded]="uiBasicCollapsed"
-        aria-controls="ui-basic">Rôle utilisateur</span>
-        <i class="icon-layers menu-icon"></i>
-      </a>
-      <div class="collapse" id="ui-basic" [ngbCollapse]="!uiBasicCollapsed">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" routerLink="basic-ui/buttons" routerLinkActive="active"
-              #buttons="routerLinkActive" translate>Buttons</a></li>
-          <li class="nav-item"> <a class="nav-link" routerLink="basic-ui/dropdowns" routerLinkActive="active"
-              #dropdowns="routerLinkActive" translate>Dropdowns</a></li>
-          <li class="nav-item"> <a class="nav-link" routerLink="basic-ui/typography" routerLinkActive="active"
-              #typography="routerLinkActive" translate>Typography</a></li>
-        </ul>
-      </div>
-    </li> -->
-
-    <!-- <li class="nav-item" [ngClass]="{ 'active' : basicElements.isActive }">
-      <a class="nav-link" (click)="formsCollapsed = !formsCollapsed" [attr.aria-expanded]="formsCollapsed"
-        aria-controls="form-elements">
-        <span class="menu-title" translate>Form elements</span>
-        <i class="icon-book-open menu-icon"></i>
-      </a>
-      <div class="collapse" id="form-elements" [ngbCollapse]="!formsCollapsed">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" routerLink="forms/basic-elements" routerLinkActive="active"
-              #basicElements="routerLinkActive" translate>Basic Elements</a></li>
-        </ul>
-      </div>
-    </li> -->
-
+      
     <!-- le ngClass peut prendre n'importe qu'elle valeur  -->
 
 
@@ -155,6 +120,61 @@
       </div>
     </li> -->
     <li class="nav-item nav-category"><span class="nav-link" translate>Configuration  </span></li>
+
+    <li class="nav-item" [ngClass]="{ 'active': branche.isActive }">
+      <a class="nav-link" routerLink="/branche" routerLinkActive #branche="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Branches</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ 'active': clinique.isActive }">
+      <a class="nav-link" routerLink="/cliniques" routerLinkActive #clinique="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Cliniques</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ 'active': regimesMedicaux.isActive }">
+      <a class="nav-link" routerLink="/regimes-medicaux" routerLinkActive #regimesMedicaux="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>régimes Medicaux</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    
+    <li class="nav-item" [ngClass]="{ 'active': banque.isActive }">
+      <a class="nav-link" routerLink="/banques" routerLinkActive #banque="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Banques</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ 'active': departement.isActive }">
+      <a class="nav-link" routerLink="/departements" routerLinkActive #departement="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Départements</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ 'active': unite.isActive }">
+      <a class="nav-link" routerLink="/unites" routerLinkActive #unite="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Unités</span>
+        <i class="icon-book-open menu-icon"></i>
+      </a>
+    </li>
 
     <!-- <li class="nav-item" [ngClass]="{ 'active' : departement.isActive  || branche.isActive }">
       <a class="nav-link" (click)="configurationCollapsed = !configurationCollapsed"

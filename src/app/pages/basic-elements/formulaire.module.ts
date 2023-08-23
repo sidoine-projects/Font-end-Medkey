@@ -31,18 +31,26 @@ import { CategorieEmploiComponent } from './categorie-emploi/categorie-emploi.co
 import { RoleUserComponent } from './role-user/role-user.component';
 import { DepartementComponent } from './departement/departement.component';
 import { PrivilegeUtilisateurComponent } from './privilege-utilisateur/privilege-utilisateur.component';
+import { UnitesComponent } from './unites/unites.component';
+import { RegimesMedicauxComponent } from './regimes-medicaux/regimes-medicaux.component';
 
 
 const routes: Routes = [
   { path: 'user', component: FormulaireComponent },
   { path: 'branche', component: BrancheComponent },
   { path: 'role-user', component: RoleUserComponent },
-  { path: 'privilege-user', component: RoleUserComponent },
+  { path: 'privilege-user', component: PrivilegeUtilisateurComponent },
+  { path: 'branches', component: BrancheComponent },
+  { path: 'departements', component: DepartementComponent },
+  { path: 'cliniques', component: CliniqueComponent },
+  { path: 'regimes-medicaux', component: RegimesMedicauxComponent },
+  { path: 'banques', component: BanqueComponent },
+  { path: 'unites', component: UnitesComponent },
   
 ]
 
 @NgModule({
-  declarations: [FormulaireComponent, BrancheComponent, CliniqueComponent, BanqueComponent, DelaiFacturationTardiveComponent, CasExemptionComponent, ChambreComponent, QuartiersComponent, LitsComponent, SallesFacturableComponent, LitsFacturablesComponent, ArticlesComponent, ServicesComponent, ProjetsComponent, CaissesComponent, MagasinComponent, CategorieFournisseursComponent, FournisseursComponent, VaccinsComponent, PharmacologiesComponent, ExamensGenerauxComponent, CategoriesSallesComponent, EtatTestLaboratoireComponent, CategorieEmploiComponent, RoleUserComponent, DepartementComponent, PrivilegeUtilisateurComponent],
+  declarations: [FormulaireComponent, BrancheComponent, CliniqueComponent, BanqueComponent, DelaiFacturationTardiveComponent, CasExemptionComponent, ChambreComponent, QuartiersComponent, LitsComponent, SallesFacturableComponent, LitsFacturablesComponent, ArticlesComponent, ServicesComponent, ProjetsComponent, CaissesComponent, MagasinComponent, CategorieFournisseursComponent, FournisseursComponent, VaccinsComponent, PharmacologiesComponent, ExamensGenerauxComponent, CategoriesSallesComponent, EtatTestLaboratoireComponent, CategorieEmploiComponent, RoleUserComponent, DepartementComponent, PrivilegeUtilisateurComponent, UnitesComponent, RegimesMedicauxComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

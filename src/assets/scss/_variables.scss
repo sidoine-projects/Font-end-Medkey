@@ -117,7 +117,9 @@ $sidebar-light-menu-icon-color: #626262;
 $sidebar-light-menu-arrow-color: #626262;
 $sidebar-light-menu-border-color: #f2edf3;
 
-$sidebar-dark-bg: #3a3c41;
+// $sidebar-dark-bg: #3a3c41;
+$sidebar-dark-bg: #25272d;
+
 $sidebar-dark-menu-color: $white;
 $sidebar-dark-menu-active-bg: darken($sidebar-dark-bg, 10%);
 // $sidebar-dark-menu-active-color: darken($white, 30%);
