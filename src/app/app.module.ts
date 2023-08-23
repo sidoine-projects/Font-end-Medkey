@@ -28,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     SidebarComponent,
+    // FormulaireComponent,
     SettingsPanelComponent,
     FooterComponent,
     SpinnerComponent,
@@ -40,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgbModule,
     BrowserAnimationsModule,
     FormsModule,
+    // FormulaireModule,
     ReactiveFormsModule,
     ChartsModule,
     TranslateModule.forRoot({

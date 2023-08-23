@@ -12,7 +12,7 @@
 }
 @media screen and (max-width: 991px) {
   .row-offcanvas {
-    position: relative;
+    position: fixed;
     -webkit-transition: all .25s ease-out;
     -o-transition: all .25s ease-out;
     transition: all .25s ease-out;
@@ -50,7 +50,7 @@
     }
 
     ::ng-deep .sidebar-offcanvas {
-      position: absolute;
+      position: fixed;
       top: 0;
       width: calc( 50% + 30px); // 6 columns
     }
