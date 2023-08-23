@@ -29,7 +29,7 @@ $colors: (
   yellow:           $yellow,
   green:            $green,
   teal:             $teal,
-  cyan:             $cyan,
+  cyan:             #286db5,
   white:            $white,
   gray:             #434a54,
   gray-light:       #aab2bd,
@@ -41,9 +41,10 @@ $colors: (
 
 
 $theme-colors: (
-  primary:        #1bdbe0,
+  primary:        #286db5,
   secondary:      #d8d8d8,
-  success:        #38ce3c,
+  // success:        #38ce3c,
+  success:        #286db5,
   info:           #8e32e9,
   warning:        #ffde73,
   danger:         #ff4d6b,
@@ -107,7 +108,8 @@ $sidebar-light-bg: $white;
 $sidebar-light-menu-color: #3e4b5b;
 $sidebar-light-submenu-color: #888;
 $sidebar-light-menu-active-bg: $white;
-$sidebar-light-menu-active-color: theme-color(success);
+// $sidebar-light-menu-active-color: theme-color(success);
+$sidebar-light-menu-active-color: rgb(99, 173, 243);
 $sidebar-light-menu-hover-bg: darken($sidebar-light-bg, 1%);
 $sidebar-light-menu-hover-color: darken($sidebar-light-menu-color, 10%);
 $sidebar-light-submenu-hover-color: darken($sidebar-light-submenu-color, 20%);
@@ -115,10 +117,12 @@ $sidebar-light-menu-icon-color: #626262;
 $sidebar-light-menu-arrow-color: #626262;
 $sidebar-light-menu-border-color: #f2edf3;
 
-$sidebar-dark-bg: #181824;
+$sidebar-dark-bg: #3a3c41;
 $sidebar-dark-menu-color: $white;
 $sidebar-dark-menu-active-bg: darken($sidebar-dark-bg, 10%);
-$sidebar-dark-menu-active-color: darken($white, 30%);
+// $sidebar-dark-menu-active-color: darken($white, 30%);
+$sidebar-dark-menu-active-color: rgb(33, 133, 226);
+
 $sidebar-dark-menu-hover-bg: darken($sidebar-dark-bg, 10%);
 $sidebar-dark-menu-hover-color: color(white);
 $sidebar-dark-submenu-color: $sidebar-dark-menu-color;
@@ -127,7 +131,10 @@ $sidebar-dark-submenu-hover-color: darken($sidebar-dark-submenu-color, 30%);
 $sidebar-dark-menu-icon-color: #626262;
 $sidebar-dark-menu-arrow-color: #626262;
 
-$sidebar-nav-category-color: theme-color(success);
+// $sidebar-nav-category-color: theme-color(success);
+
+$sidebar-nav-category-color: #81888d;
+
 $sidebar-nav-category-padding: 1rem 0 1.125rem;
 
 $sidebar-nav-link-border-color: rgba($white, 0.11);

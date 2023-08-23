@@ -60,7 +60,8 @@
               margin-right: auto;
             }
 
-            color: $sidebar-dark-menu-icon-color;
+            // color: $sidebar-dark-menu-icon-color;
+            color: rgb(33, 133, 226);
 
             &:before {
               vertical-align: middle;
@@ -97,13 +98,15 @@
           border-top: none;
 
           .menu-title {
+            // color: $sidebar-dark-menu-active-color;
             color: $sidebar-dark-menu-active-color;
             font-family: $type1;
             font-weight: $font-weight-medium;
           }
 
           i {
-            color: theme-color(success);
+            // color: theme-color(success);
+            color: rgb(33, 133, 229);
           }
         }
 
@@ -170,7 +173,9 @@
           .icon-container {
             font-size: 16px;
             position: relative;
-            color: $sidebar-dark-menu-icon-color;
+            // color: $sidebar-dark-menu-icon-color;
+            color: rgb(33, 133, 226);
+            
             margin-left: auto;
             align-self: flex-start;
 
@@ -186,7 +191,8 @@
             .dot-indicator {
               top: 0;
               transform: none;
-              color: $sidebar-dark-menu-icon-color;
+              // color: $sidebar-dark-menu-icon-color;
+              color: rgb(33, 133, 226);
             }
           }
         }
@@ -198,6 +204,8 @@
 
       &.nav-category {
         color: $sidebar-nav-category-color;
+        // color: rgb(33, 133, 229);
+        
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
@@ -278,6 +286,7 @@
 
         .nav-link {
           color: $sidebar-dark-submenu-color;
+        
           padding: $sidebar-submenu-item-padding;
           position: relative;
           font-size: $sidebar-submenu-font-size;

@@ -11,7 +11,7 @@ export class SidebarComponent implements OnInit {
   public uiBasicCollapsed = false;
   public uiAdvancedCollapsed = false;
   public formsCollapsed = false;
-  public formulaireCollapsed = false;
+  // public formulaireCollapsed = false;
   public editorsCollapsed = false;
   public chartsCollapsed = false;
   public tablesCollapsed = false;
