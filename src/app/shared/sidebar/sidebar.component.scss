@@ -5,8 +5,9 @@
 .sidebar {
   min-height: calc(100vh - #{$navbar-height});
   background: $sidebar-dark-bg;
+  // font-family: $type1;
   font-family: $type1;
-  padding: 0;
+  padding: 1;
   width: $sidebar-width-lg;
   z-index: 11;
   transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
@@ -61,7 +62,8 @@
             }
 
             // color: $sidebar-dark-menu-icon-color;
-            color: rgb(33, 133, 226);
+            // color: rgb(33, 133, 226);
+            color: white;
 
             &:before {
               vertical-align: middle;
@@ -174,7 +176,7 @@
             font-size: 16px;
             position: relative;
             // color: $sidebar-dark-menu-icon-color;
-            color: rgb(33, 133, 226);
+            color: white;
             
             margin-left: auto;
             align-self: flex-start;
@@ -192,7 +194,7 @@
               top: 0;
               transform: none;
               // color: $sidebar-dark-menu-icon-color;
-              color: rgb(33, 133, 226);
+              color: white;
             }
           }
         }
@@ -296,7 +298,8 @@
 
           &:before {
             content: "\e606";
-            font-family: "simple-line-icons";
+            // font-family: "simple-line-icons";
+            font-family: $type1;
             display: block;
             position: absolute;
             left: 0px;

@@ -1,21 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BrancheComponent } from './branche.component';
-// import { FormWizardModule } from 'angular2-wizard';
+import { AllocationsLitsComponent } from './allocations-lits.component';
 
-describe('BrancheComponent', () => {
-  let component: BrancheComponent;
-  let fixture: ComponentFixture<BrancheComponent>;
+describe('AllocationsLitsComponent', () => {
+  let component: AllocationsLitsComponent;
+  let fixture: ComponentFixture<AllocationsLitsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BrancheComponent ]
+      declarations: [ AllocationsLitsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BrancheComponent);
+    fixture = TestBed.createComponent(AllocationsLitsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

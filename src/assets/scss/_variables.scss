@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 ////////// COLOR SYSTEM //////////
 
@@ -84,7 +85,8 @@ $social-colors: (
 
 ////////// FONTS//
 
-$type1: 'Open Sans',
+// $type1: 'Open Sans',
+$type1: 'Montserrat',
 sans-serif;
 
 $font-weight-light: 300;
@@ -118,31 +120,42 @@ $sidebar-light-menu-arrow-color: #626262;
 $sidebar-light-menu-border-color: #f2edf3;
 
 // $sidebar-dark-bg: #3a3c41;
-$sidebar-dark-bg: #25272d;
+// $sidebar-dark-bg: #25272d;
+$sidebar-dark-bg: #2365ab;
 
-$sidebar-dark-menu-color: $white;
+
+
+$sidebar-dark-menu-color: rgb(255, 255, 255);
 $sidebar-dark-menu-active-bg: darken($sidebar-dark-bg, 10%);
 // $sidebar-dark-menu-active-color: darken($white, 30%);
-$sidebar-dark-menu-active-color: rgb(33, 133, 226);
+$sidebar-dark-menu-active-color: white;
+// $sidebar-dark-menu-active-color: rgb(33, 133, 226);
 
 $sidebar-dark-menu-hover-bg: darken($sidebar-dark-bg, 10%);
 $sidebar-dark-menu-hover-color: color(white);
 $sidebar-dark-submenu-color: $sidebar-dark-menu-color;
 $sidebar-dark-submenu-hover-bg: initial;
 $sidebar-dark-submenu-hover-color: darken($sidebar-dark-submenu-color, 30%);
-$sidebar-dark-menu-icon-color: #626262;
-$sidebar-dark-menu-arrow-color: #626262;
+$sidebar-dark-menu-icon-color: white;
+// $sidebar-dark-menu-icon-color: #626262;
+$sidebar-dark-menu-arrow-color: white;
+// $sidebar-dark-menu-arrow-color: #626262;
 
 // $sidebar-nav-category-color: theme-color(success);
 
-$sidebar-nav-category-color: #81888d;
+$sidebar-nav-category-color: white;
+
+// $sidebar-nav-category-color: #81888d;
 
 $sidebar-nav-category-padding: 1rem 0 1.125rem;
 
 $sidebar-nav-link-border-color: rgba($white, 0.11);
 
-$sidebar-menu-font-size: $default-font-size;
-$sidebar-menu-padding-y: 0.625rem;
+$sidebar-menu-font-size: 16px;
+// $sidebar-menu-font-size: $default-font-size;
+$sidebar-menu-padding-y: 1rem;
+// $sidebar-menu-padding-y: 0.625rem;
+// $sidebar-menu-padding-x: 1.75rem;
 $sidebar-menu-padding-x: 1.75rem;
 
 $sidebar-submenu-font-size: .8125rem;
@@ -172,7 +185,8 @@ $icon-only-menu-bg-dark: $sidebar-dark-menu-hover-bg;
 $navbar-bg: #fff;
 $navbar-height: 70px;
 $navbar-menu-color: #111111;
-$navbar-menu-icon-color: #626262;
+// $navbar-menu-icon-color: #626262;
+$navbar-menu-icon-color: white;
 
 $navbar-font-size: .875rem;
 $navbar-icon-font-size: 1.25rem;

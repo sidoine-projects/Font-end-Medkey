@@ -7,6 +7,7 @@ import {TranslateService} from '@ngx-translate/core';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
+
 export class SidebarComponent implements OnInit {
   public uiBasicCollapsed = false;
   public uiAdvancedCollapsed = false;

@@ -62,7 +62,7 @@ import '@angular/localize/init';
 import 'zone.js/dist/zone';  // Included with Angular CLI.
 
 (window as any).global = window; // Added for dragula plugin
-
+// global.Buffer = global.Buffer || require('buffer').Buffer; //Cela permet à Angular de reconnaître jQuery sans générer d'erreur.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */

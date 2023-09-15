@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { FormWizardModule } from 'angular2-wizard';
 
 @Component({
   selector: 'app-branche',
@@ -11,5 +12,10 @@ export class BrancheComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  
+
   
 }
+

@@ -19,7 +19,12 @@ import { SettingsPanelComponent } from './shared/settings-panel/settings-panel.c
 import { FooterComponent } from './shared/footer/footer.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
+// import { DataTablesModule } from 'angular-datatables';
 // import { BrancheComponent } from './pages/form/branche/branche.component';
+// import { FormWizardModule } from 'angular2-wizard';
+// import { FormWizardModule } from 'angular-wizard-form';
+
+
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     SidebarComponent,
     // FormulaireComponent,
+
     SettingsPanelComponent,
     FooterComponent,
     SpinnerComponent,
@@ -46,6 +52,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     FormsModule,
     // FormulaireModule,
+    // FormWizardModule,
+    // DataTablesModule,
     ReactiveFormsModule,
     ChartsModule,
     TranslateModule.forRoot({

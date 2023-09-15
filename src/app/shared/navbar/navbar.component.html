@@ -1,17 +1,58 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-    <a class="navbar-brand brand-logo" href="index.html"> <span class="text-white font-weight-bold" style="font-size:30px" ><span style="color:rgb(49, 121, 246)">MED</span> <span style="color:rgb(216, 31, 31)">KEY</span> </span> 
-      <!-- <img src="assets/images/logo.png" alt="logo" class="logo-dark" /> -->
+  
+  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" style="background-color: white; border: 1px solid #ccc; box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);">
+
+    <!-- <a class="navbar-brand brand-logo" href="index.html"> <span class="text-white font-weight-bold" style="font-size:30px" ><span style="color:rgb(49, 121, 246)">MED</span> <span style="color:rgb(216, 31, 31)">KEY</span> </span> 
+    <img src="assets/images/logo.png" alt="logo" class="logo-dark" /> -->
+    <!-- <img src="assets/images/logo-light.svg" alt="logo-light" class="logo-light"> 
+    </a> -->
+
+    <a class="brand-logo" href="index.html">
+
+      <img src="assets/images/logo.png" alt="logo" class="logo-white"  style="width: 185px !important" />
       <!-- <img src="assets/images/logo-light.svg" alt="logo-light" class="logo-light"> -->
     </a>
+
     <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
-    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize" (click)="toggleSidebar()">
-      <span class="icon-menu"></span>
-    </button>
+    <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize" (click)="toggleSidebar()">
+        <span class="icon-menu"></span>
+      </button> -->
+
   </div>
-  <div class="navbar-menu-wrapper d-flex align-items-center">
-    <!-- <h5 class="mb-0 font-weight-medium d-none d-lg-flex" translate >Welcome Medkey dashboard!</h5> -->
-    <ul class="navbar-nav navbar-nav-right">
+
+
+
+
+  <div class="navbar-menu-wrapper d-flex align-items-center justify-content-center ">
+
+    <h6 class="mb-0 font-weight-medium d-none d-lg-flex" translate>
+      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize"
+        (click)="toggleSidebar()">
+        <span class="icon-menu" style="font-size: 0.6em"></span>
+      </button>
+    </h6>
+
+    <!-- <ul class="navbar-nav navbar-nav-center">
+      <li class="nav-item dropdown d-none d-xl-inline-flex">
+        <h4 style="text-align: center !important;" class="mx-auto font-weight-bold text-center">GESTION DES HOSPITALISATIONS</h4>
+
+      </li>
+    </ul> -->
+    <div class="mx-auto row align-items-center" >
+      <h4 style="text-align: center !important; margin: 0; padding: 0;" class="mb-0 font-weight-bold text-center">
+        GESTION DES HOSPITALISATIONS 
+      </h4>
+    </div>
+<!--     
+    <div class="mx-auto align-items-center">
+      <h4 style="text-align: center !important;" class="mb-0 font-weight-bold text-center">
+        GESTION DES HOSPITALISATIONS
+      </h4>
+    </div> -->
+
+
+    <!-- <ul class="navbar-nav navbar-nav-left"> -->
+      <ul class="navbar-nav ">
       <!-- <form class="search-form d-none d-md-block" action="#">
         <i class="icon-magnifier"></i>
         <input type="search" class="form-control" placeholder="{{'Search Here' | translate }}" title="{{'Search Here' | translate }}">
@@ -75,22 +116,29 @@
       </li> -->
       <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown" ngbDropdown>
         <a class="nav-link dropdown-toggle" id="UserDropdown" ngbDropdownToggle aria-expanded="false">
-          <img class="img-xs rounded-circle ml-2" src="assets/images/faces/face6.jpg" alt="Profile image"> <span class="font-weight-normal">Admin Admin</span></a>
+          <img class="img-xs rounded-circle ml-2" src="assets/images/faces/user.png" alt="Profile image"> <span
+            class="font-weight-normal">Pierre HOUNDAGBA</span></a>
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" ngbDropdownMenu aria-labelledby="UserDropdown">
           <div class="dropdown-header text-center">
-            <img class="img-md rounded-circle" src="assets/images/faces/face6.jpg" alt="Profile image">
-            <p class="mb-1 mt-3">Admin Admin</p>
+            <img class="img-md rounded-circle" src="assets/images/faces/user.png" alt="Profile image"
+              style="width: 30px;">
+            <p class="mb-1 mt-3">Pierre HOUNDAGBA</p>
             <p class="font-weight-light text-muted mb-0">medkey@gmail.com</p>
           </div>
-          <a class="dropdown-item"><i class="dropdown-item-icon icon-user text-primary"></i> <span translate>My Profile</span> <span class="badge badge-pill badge-danger">1</span></a>
-          <a class="dropdown-item"><i class="dropdown-item-icon icon-speech text-primary"></i> <span translate>Messages</span></a>
-          <a class="dropdown-item"><i class="dropdown-item-icon icon-energy text-primary"></i> <span translate>Activity</span></a>
+          <a class="dropdown-item"><i class="dropdown-item-icon icon-user text-primary"></i> <span translate>My
+              Profile</span> <span class="badge badge-pill badge-danger">1</span></a>
+          <a class="dropdown-item"><i class="dropdown-item-icon icon-speech text-primary"></i> <span
+              translate>Messages</span></a>
+          <a class="dropdown-item"><i class="dropdown-item-icon icon-energy text-primary"></i> <span
+              translate>Activity</span></a>
           <!-- <a class="dropdown-item"><i class="dropdown-item-icon icon-question text-primary"></i> <span translate>FAQ</span></a> -->
-          <a class="dropdown-item"><i class="dropdown-item-icon icon-power text-primary"></i><span translate>Déconnexion</span></a>
+          <a class="dropdown-item"><i class="dropdown-item-icon icon-power text-primary"></i><span
+              translate>Déconnexion</span></a>
         </div>
       </li>
     </ul>
-    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" (click)="toggleOffcanvas()">
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+      (click)="toggleOffcanvas()">
       <span class="icon-menu"></span>
     </button>
   </div>

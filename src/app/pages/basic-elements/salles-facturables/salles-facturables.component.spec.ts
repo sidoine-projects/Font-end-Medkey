@@ -1,21 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BrancheComponent } from './branche.component';
-// import { FormWizardModule } from 'angular2-wizard';
+import { SallesFacturablesComponent } from './salles-facturables.component';
 
-describe('BrancheComponent', () => {
-  let component: BrancheComponent;
-  let fixture: ComponentFixture<BrancheComponent>;
+describe('SallesFacturablesComponent', () => {
+  let component: SallesFacturablesComponent;
+  let fixture: ComponentFixture<SallesFacturablesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BrancheComponent ]
+      declarations: [ SallesFacturablesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BrancheComponent);
+    fixture = TestBed.createComponent(SallesFacturablesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

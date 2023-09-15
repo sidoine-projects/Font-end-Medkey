@@ -33,6 +33,12 @@ import { DepartementComponent } from './departement/departement.component';
 import { PrivilegeUtilisateurComponent } from './privilege-utilisateur/privilege-utilisateur.component';
 import { UnitesComponent } from './unites/unites.component';
 import { RegimesMedicauxComponent } from './regimes-medicaux/regimes-medicaux.component';
+import { SallesFacturablesComponent } from './salles-facturables/salles-facturables.component';
+import { CategoriesChambresComponent } from './categories-chambres/categories-chambres.component';
+import { AdmissionsFacturablesComponent } from './admissions-facturables/admissions-facturables.component';
+import { AdmissionsAttentesComponent } from './admissions-attentes/admissions-attentes.component';
+import { AdmissionsDirectesComponent } from './admissions-directes/admissions-directes.component';
+import { AllocationsLitsComponent } from './allocations-lits/allocations-lits.component';
 
 
 const routes: Routes = [
@@ -42,15 +48,27 @@ const routes: Routes = [
   { path: 'privilege-user', component: PrivilegeUtilisateurComponent },
   { path: 'branches', component: BrancheComponent },
   { path: 'departements', component: DepartementComponent },
+  { path: 'quartiers', component: QuartiersComponent },
   { path: 'cliniques', component: CliniqueComponent },
   { path: 'regimes-medicaux', component: RegimesMedicauxComponent },
   { path: 'banques', component: BanqueComponent },
   { path: 'unites', component: UnitesComponent },
+  { path: 'unites', component: UnitesComponent },
+  { path: 'salles-facturables', component: SallesFacturablesComponent },
+  { path: 'lits-facturables', component: LitsFacturablesComponent },
+  { path: 'lits', component: LitsComponent },
+  { path: 'chambres', component: ChambreComponent },
+  { path: 'categories-chambres', component: CategoriesChambresComponent },
+  { path: 'admissions-facturables', component: AdmissionsFacturablesComponent },
+  { path: 'admissions-attentes', component: AdmissionsAttentesComponent },
+  { path: 'admissions-directes', component: AdmissionsDirectesComponent },
+  { path: 'allocations-lits', component: AllocationsLitsComponent },
+
   
 ]
 
 @NgModule({
-  declarations: [FormulaireComponent, BrancheComponent, CliniqueComponent, BanqueComponent, DelaiFacturationTardiveComponent, CasExemptionComponent, ChambreComponent, QuartiersComponent, LitsComponent, SallesFacturableComponent, LitsFacturablesComponent, ArticlesComponent, ServicesComponent, ProjetsComponent, CaissesComponent, MagasinComponent, CategorieFournisseursComponent, FournisseursComponent, VaccinsComponent, PharmacologiesComponent, ExamensGenerauxComponent, CategoriesSallesComponent, EtatTestLaboratoireComponent, CategorieEmploiComponent, RoleUserComponent, DepartementComponent, PrivilegeUtilisateurComponent, UnitesComponent, RegimesMedicauxComponent],
+  declarations: [FormulaireComponent, BrancheComponent, CliniqueComponent, BanqueComponent, DelaiFacturationTardiveComponent, CasExemptionComponent, ChambreComponent, QuartiersComponent, LitsComponent, SallesFacturableComponent, LitsFacturablesComponent, ArticlesComponent, ServicesComponent, ProjetsComponent, CaissesComponent, MagasinComponent, CategorieFournisseursComponent, FournisseursComponent, VaccinsComponent, PharmacologiesComponent, ExamensGenerauxComponent, CategoriesSallesComponent, EtatTestLaboratoireComponent, CategorieEmploiComponent, RoleUserComponent, DepartementComponent, PrivilegeUtilisateurComponent, UnitesComponent, RegimesMedicauxComponent, SallesFacturablesComponent, CategoriesChambresComponent, AdmissionsFacturablesComponent, AdmissionsAttentesComponent, AdmissionsDirectesComponent, AllocationsLitsComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
