@@ -61,6 +61,7 @@ const routes: Routes = [
   { path: 'categories-chambres', component: CategoriesChambresComponent },
   { path: 'admissions-facturables', component: AdmissionsFacturablesComponent },
   { path: 'admissions-attentes', component: AdmissionsAttentesComponent },
+  { path: 'create-admission-attente', component: AdmissionsAttentesComponent },
   { path: 'admissions-directes', component: AdmissionsDirectesComponent },
   { path: 'allocations-lits', component: AllocationsLitsComponent },
 

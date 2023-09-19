@@ -45,18 +45,24 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="exampleSelectGender">Patient: (<span style="color:red">*</span>)</label>
-                                <select class="form-control" id="exampleSelectGender">
+                                <!-- <select class="form-control" id="exampleSelectGender">
+                                    <option selected>Selectionner un patient</option>
                                     <option>DOSSOU Jean</option>
                                     <option>ABO Paul</option>
-                                </select>
+                                </select> -->
+                                <ng-select >
+                                    <option value="Valeur 1">Valeur 1</option>
+                                    <option value="Valeur 2">Valeur 2</option>
+                                    <option value="Valeur 3">Valeur 3</option>
+                                  </ng-select>
                             </div>
 
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="exampleInputUsername1">Motif de changement de lit </label>
+                                <label for="exampleInputUsername1">Motif </label>
                                 <input type="text" class="form-control" id="exampleInputUsername1"
-                                    placeholder="Par exemple: Admission en attente des patients">
+                                    placeholder="Par exemple: Intervention en urgence">
                             </div>
 
                         </div>
@@ -94,8 +100,13 @@
                             placeholder="Des commentaires supplémentaires pertinents"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-success mr-2">AJouter</button>
-                    <button class="btn btn-danger">Annuler</button>
+             
+                    <div class="d-flex justify-content-between mb-4">
+                        <button class="btn btn-secondary btn-rounded btn-lg">Retour</button>
+                        <form><!-- Votre formulaire ici --></form>
+                        <button type="submit" class="btn btn-success btn-rounded">Ajouter</button>
+                      </div>
+
                 </form>
 
             </div>

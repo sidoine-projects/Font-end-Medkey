@@ -96,8 +96,40 @@
   .label{
     font-size: 16px;
   }
-input, select, textarea {
+
+  // input,  textarea {
+  //   border: 1px solid #5c5b5b !important;
+  // }
+
+  ng-select , input,  textarea {
+
+    border: 1px solid #9a9a9b !important;
+
+  }
+  select{
+  
+    // border-color: #848489 !important;
     border: 1px solid #a8adb3 !important;
   }
+
+
+
+  ng-select {
+
+    border-radius: 4px !important;
+    border: 1px solid #a8adb3 !important;
+    
+
+  }
+
+  ng-select input {
+    border: none !important; /* Remplacez cette règle par ce que vous souhaitez pour les input dans ng-select */
+  }
+
+  label{
+
+    font-size: 16px !important; 
+  }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Montserrat', sans-serif !important;}

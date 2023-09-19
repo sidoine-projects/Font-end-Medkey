@@ -1,0 +1,231 @@
+<div class="page-header">
+    <h3 class="page-title">
+
+        Lits
+    </h3>
+    <!-- <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:;">Salle </a></li>
+            <li class="breadcrumb-item active" aria-current="page">Créer une Salle </li>
+        </ol>
+    </nav> -->
+</div>
+<div class="">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Ajouter un lit </h4>
+                <p class="card-description">
+
+                </p>
+                <form class="forms-sample ">
+
+                    <ngb-tabset>
+
+                        <ngb-tab title="Lit Facturable">
+                            <ng-template ngbTabContent>
+                                <span class="d-block mt-5"></span>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Désignation du lit: (<span
+                                                    style="color:red">*</span>) </label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Désignation du lit">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleTextarea1">Description</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Description du lit">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Tarif: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Tarif">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Salles: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Salle A</option>
+                                                <option>Salle B</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Type: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Simple</option>
+                                                <option>Double</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mt-3">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Etat: (<span
+                                                    style="color:red">*</span>)
+                                            </label>
+                                            <div class="col-sm-4">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="etatlitRadios" id="etatlitRadios1" value="" checked>
+                                                        Vide
+                                                        <i class="input-helper"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="etatlitRadios" id="etatlitRadios2" value="option2">
+                                                        Occupé
+                                                        <i class="input-helper"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Equipements médicals</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Tout équipement médical spécifique associé au lit, comme des moniteurs, des pompes à perfusion"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Notes</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Des notes spécifiques concernant le lit"></textarea>
+                                </div>
+
+                            </ng-template>
+                        </ngb-tab>
+
+
+                        <ngb-tab title="Lit Non Facturable">
+                            <ng-template ngbTabContent>
+                                <span class="d-block mt-5"></span>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Désignation du lit: (<span
+                                                    style="color:red">*</span>) </label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Désignation du lit">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleTextarea1">Description</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Description du lit">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Type: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Simple</option>
+                                                <option>Double</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Salles: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Salle A</option>
+                                                <option>Salle B</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mt-3">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Etat: (<span style="color:red">*</span>)
+                                        </label>
+                                        <div class="col-sm-4">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="etatlitRadios"
+                                                        id="etatlitRadios1" value="" checked>
+                                                    Vide
+                                                    <i class="input-helper"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="etatlitRadios"
+                                                        id="etatlitRadios2" value="option2">
+                                                    Occupé
+                                                    <i class="input-helper"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Equipements médicals</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Tout équipement médical spécifique associé au lit, comme des moniteurs, des pompes à perfusion"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Notes</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Des notes spécifiques concernant le lit"></textarea>
+                                </div>
+
+                            </ng-template>
+                        </ngb-tab>
+
+
+                    </ngb-tabset>
+
+                    <button type="submit" class="btn btn-success mr-2">AJouter</button>
+                    <button class="btn btn-danger">Annuler</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

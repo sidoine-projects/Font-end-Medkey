@@ -1,41 +1,24 @@
 
 // @import "~bootstrap/dist/css/bootstrap.min.css";
 
+
 #myTable thead th {
-    background-color: #e9f0f0; /* Couleur d'arrière-plan de l'en-tête */
-    font-weight: bold; /* Texte en gras dans l'en-tête */
-  }
-  
-  /* Appliquer un style aux cellules des colonnes paires */
-  #myTable tbody tr:nth-child(even) {
-    background-color: #f5f6f7; /* Couleur d'arrière-plan des lignes paires */
-  }
+  padding: 10px !important; /* Espacement interne */
+  height: 20px !important; /* Hauteur de la ligne d'en-tête */
+  color: #000000 !important; /* Couleur du texte */
+  font-weight: bold !important; /* Gras */
+  vertical-align: middle !important; /* Centre verticalement */
+}
+
+/* Appliquer un style aux cellules des colonnes paires */
+#myTable tbody tr:nth-child(odd) {
+  background-color: #f0f3f6; /* Couleur d'arrière-plan des lignes paires */
+}
+
+
+/* Appliquer un style à l'en-tête du tableau */
 
 
 
-  
-  
 
 
-// .dataTables_length select {
-//     margin-right: 10px !important; /* Augmentez la marge à droite selon vos préférences */
-//   }
-
-//   .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-//     background: none;
-//     color: rgb(198, 211, 238) !important; /*change the hover text color*/
-//   }
-
-
-//   /*below block of css for change style when active*/
-
-//   .dataTables_wrapper .dataTables_paginate .paginate_button:active {
-//     background: none;
-//     color: rgb(216, 235, 252) !important;
-//   }
-
-
-// .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-//     background-color: transparent;
-//     color: #007bff; /* Couleur de lien Bootstrap */
-//   }
