@@ -1,0 +1,12 @@
+#myTable thead th {
+    padding: 10px !important; /* Espacement interne */
+    height: 20px !important; /* Hauteur de la ligne d'en-tête */
+    color: #000000 !important; /* Couleur du texte */
+    font-weight: bold !important; /* Gras */
+    vertical-align: middle !important; /* Centre verticalement */
+  }
+  
+  /* Appliquer un style aux cellules des colonnes paires */
+  #myTable tbody tr:nth-child(odd) {
+    background-color: #f5f5fa !important; /* Couleur d'arrière-plan des lignes paires */
+  }

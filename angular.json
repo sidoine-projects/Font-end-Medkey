@@ -31,31 +31,15 @@
               "src/styles.scss",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/mapbox-gl/dist/mapbox-gl.css",
-              "node_modules/@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css",
+              "node_modules/@mapbox/mapbox-gl-geocoder/lib/mapbox-gl-geocoder.css"
 
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css",
-              "node_modules/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css"
+      
             ],
             "scripts": [
               "node_modules/raphael/raphael.min.js",
-              "node_modules/select2/dist/js/select2.full.min.js",
-
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/datatables.net/js/jquery.dataTables.js",
-              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
-              "node_modules/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js",
-
-              "node_modules/jszip/dist/jszip.min.js",
-              "node_modules/pdfmake/build/pdfmake.min.js",
-              "node_modules/pdfmake/build/vfs_fonts.js",
+              "node_modules/select2/dist/js/select2.full.min.js"
 
            
-              "node_modules/datatables.net-buttons/js/buttons.html5.min.js",
-              "node_modules/datatables.net-buttons/js/buttons.print.js",
-              "node_modules/datatables.net-buttons/js/buttons.colVis.js",
-              "node_modules/datatables.net-buttons/js/buttons.flash.js"
             ]
           },
           "configurations": {

@@ -1,23 +1,13 @@
-<div class="page-header">
-    <h3 class="page-title">
-  
-        Zones d'hospitalisation
-    </h3>
-    <!-- <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:;">Zones d'hospitalisation</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Créer une Zone d'hospitalisation</li>
-        </ol>
-    </nav> -->
-  </div>
+
   <div class="row">
-    <div class="col-md-6 grid-margin stretch-card">
+    <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Ajouter </h4>
-                <p class="card-description">
-  
-                </p>
+              
+                <h3 class="card-title text-white rounded p-3 mb-4 text-center" style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <strong>Enregistrement de Zone d'hospitalisation</strong>
+                  </h3>
+                  <br>
                 <form class="forms-sample ">
   
                     <div class="form-group">
@@ -26,12 +16,15 @@
                     </div>
   
                     <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
+                        <label for="exampleTextarea1">Description: (<span style="color:red">*</span>)</label>
                         <textarea class="form-control" id="exampleTextarea1" rows="4" placeholder="Par exemple: La Zone A regroupe les salles privées de 001 à 200"></textarea>
                     </div>
   
-                    <button type="submit" class="btn btn-success mr-2">AJouter</button>
-                    <button class="btn btn-danger">Annuler</button>
+                    <div class="d-flex justify-content-between mb-4">
+                        <button class="btn btn-secondary btn-rounded  btn-medkey">Retour</button>
+                        <form><!-- Votre formulaire ici --></form>
+                        <button type="submit" class="btn btn-success btn-rounded  btn-medkey">Ajouter</button>
+                      </div>
                 </form>
             </div>
         </div>

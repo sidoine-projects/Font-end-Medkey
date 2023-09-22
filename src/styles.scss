@@ -23,7 +23,7 @@
 @import "~flag-icon-css/sass/flag-icon";
 @import "~simple-line-icons/scss/simple-line-icons";
 
- 
+
 /* === Template mixins === */
 @import "./assets/scss/mixins/animation";
 @import "./assets/scss/mixins/badges";
@@ -85,51 +85,201 @@
 @import "./assets/scss/layout";
 
 
-  
+
 
 // html, body { height: 100%; }
 // body { margin: 0; font-family: "Montserrat", Roboto ,"Helvetica Neue", sans-serif; }
 .card {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
-    border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Ajoute une ombre */
+  border-radius: 5px;
+}
+
+
+label {
+  font-size: 16px;
+  color: #000000 !important;
+  font-weight: 400 !important;
+}
+
+// input,  textarea {
+//   border: 1px solid #5c5b5b !important;
+// }
+
+input,
+textarea {
+
+  border: 1px solid #9a9a9b !important;
+
+}
+
+select {
+
+  // border-color: #848489 !important;
+  border-radius: 4px !important;
+  border: 1px solid #9a9a9b !important;
+
+
+}
+
+
+
+.ng-select .ng-select-container {
+
+  border-radius: 4px !important;
+  // border: 1px solid #c3c3c3 !important;
+  // border-color: #afafaf !important;
+  border-color: #999999 !important;
+
+
+
+}
+
+ng-select input {
+  border: none !important;
+  /* Remplacez cette règle par ce que vous souhaitez pour les input dans ng-select */
+}
+
+label {
+
+  font-size: 16px !important;
+}
+
+
+.btn-medkey {
+  border: 3px solid #2365ab !important;
+  border-radius: 25px !important;
+  width: 200px !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  /* Ajustez la taille du texte selon vos préférences */
+  padding: 0.685rem 0.49rem !important;
+}
+
+.btn-medkey:hover {
+  /* Changez la couleur de fond au survol */
+
+  color: #0d47a1 !important;
+  background-color: #ffffff !important; /* Par exemple, une couleur de fond différente au survol */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+table tbody td {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 500 !important;
+}
+
+
+
+
+///////////////////////////////////////////////////
+table.dataTable th.focus,
+table.dataTable td.focus {
+  outline: 1px solid #0d47a1;
+  outline-offset: -1px;
+  background-color: #fcffbf !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+  top: 9px;
+  left: 4px;
+  height: 14px;
+  width: 14px;
+  display: block;
+  position: absolute;
+  color: white;
+  border: 2px solid white;
+  border-radius: 14px;
+
+  box-sizing: content-box;
+  text-align: center;
+
+  line-height: 14px;
+  content: '+';
+  background-color: #337ab7;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.child td:before {
+  display: none;
+}
+
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>td:first-child,
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>th:first-child {
+  padding-left: 27px;
+}
+
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>th:first-child:before {
+  top: 5px;
+  left: 4px;
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  line-height: 14px;
+  text-indent: 3px;
+}
+
+table.dataTable>tbody>tr.child {
+  padding: 0.5em 1em;
+}
+
+table.dataTable>tbody>tr.child ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table.dataTable>tbody>tr.child ul li {
+  border-bottom: 1px solid #efefef;
+  padding: 0.5em 0;
+}
+
+table.dataTable>tbody>tr.child ul li:first-child {
+  padding-top: 0;
+}
+
+table.dataTable>tbody>tr.child ul li:last-child {
+  border-bottom: none;
+}
+
+table.dataTable>tbody>tr.child span.dtr-title {
+  display: inline-block;
+  min-width: 75px;
+  font-weight: bold;
+  background-color: rgb(247, 247, 247);
+}
+
+
+
+@media (max-width: 768px) {
+  .dt-buttons {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
   }
-  .label{
-    font-size: 16px;
+
+  .dt-buttons .btn {
+    white-space: nowrap !important;
   }
 
-  // input,  textarea {
-  //   border: 1px solid #5c5b5b !important;
-  // }
-
-  ng-select , input,  textarea {
-
-    border: 1px solid #9a9a9b !important;
-
-  }
-  select{
-  
-    // border-color: #848489 !important;
-    border: 1px solid #a8adb3 !important;
+  /* Masquer la barre de défilement horizontale */
+  .dt-buttons::-webkit-scrollbar {
+    display: none !important;
   }
 
 
 
-  ng-select {
 
-    border-radius: 4px !important;
-    border: 1px solid #a8adb3 !important;
-    
-
-  }
-
-  ng-select input {
-    border: none !important; /* Remplacez cette règle par ce que vous souhaitez pour les input dans ng-select */
-  }
-
-  label{
-
-    font-size: 16px !important; 
-  }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Montserrat', sans-serif !important;}
+}

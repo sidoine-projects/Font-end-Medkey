@@ -13,7 +13,7 @@
             <div class="card-body">
             
                 <h3 class="card-title text-white rounded p-3 mb-4 text-center" style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <strong>Ajouter un Type d'Admission</strong>
+                    <strong>Enregistrement de Type d'Admission</strong>
                   </h3>
                 <form class="forms-sample ">
 
@@ -51,7 +51,7 @@
                                     <div class="form-group">
                                         <label for="exampleInputUsername1">Désignation: (<span style="color:red">*</span>)</label>
                                         <input type="text" class="form-control" id="exampleInputUsername1"
-                                            placeholder="Par exemple: Admission en attente des patients">
+                                            placeholder="Par exemple: Admission dentaire">
                                     </div>
 
                                 </div>
@@ -68,14 +68,14 @@
 
 
                             <div class="form-group">
-                                <label for="exampleTextarea1">Description de l'admission</label>
+                                <label for="exampleTextarea1">Description de l'admission: (<span style="color:red">*</span>)</label>
                                 <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="exampleTextarea1">Symptômes</label>
+                                        <label for="exampleTextarea1">Symptômes (<span style="color:red">*</span>)</label>
                                         <textarea class="form-control" id="exampleTextarea1" rows="4"
                                             placeholder="Symptômes actuels du patient"></textarea>
                                     </div>
@@ -91,55 +91,79 @@
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="col-lg-6">
-
-                                    <div class=" form-group mg-t-20 mg-lg-t-0">
-                                        <p class="mg-b-10">Services medicaux</p>
-                                        <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
-                                            [multiple]="true">
-                                        </ng-select>
+                                    <div class="form-group ">
+                                        <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                                style="color:red">*</span>)</label>
+                                        <select class="form-control" id="exampleSelectZone">
+                                            <option>Zone A</option>
+                                            <option>Zone B</option>
+                                        </select>
                                     </div>
-
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
-                                        <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id">
-                                        </ng-select>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Salles: (<span style="color:red">*</span>)</label>
+                                        <label for="exampleSelectGender">Salles: (<span
+                                                style="color:red">*</span>)</label>
                                         <select class="form-control" id="exampleSelectGender">
                                             <option>Salle A</option>
                                             <option>Salle B</option>
                                         </select>
                                     </div>
-
                                 </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
+                                <select class="form-control" id="exampleSelectGender">
+                                    <option>Lit 56</option>
+                                    <option>Lit 53 </option>
+                                </select>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class=" form-group mg-t-20 mg-lg-t-0">
+                                        <p class="mg-b-10">Service medical: (<span style="color:red">*</span>)</p>
+                                        <select class="form-control" id="exampleSelectGender">
+                                            <option>Dentaire</option>
+                                      
+                                        </select>
+                                        <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
+                                            [multiple]="true">
+                                        </ng-select> -->
+                                    </div>
+                                </div>
+
+                                <!-- 
+                                <div class="col-lg-6 mg-t-20 mg-lg-t-0">
+                                    <p class="mg-b-10">infirmière(s)</p>
+                                    <ng-select [items]="[
+                                      { id: 1, name: 'Option 1' },
+                                      { id: 2, name: 'Option 2' },
+                                      { id: 3, name: 'Option 3' }
+                                    ]" bindLabel="name" bindValue="id" [multiple]="true">
+                                    </ng-select>
+                                  </div> -->
+
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
+                                        <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
+                                        <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id">
+                                        </ng-select> -->
                                         <select class="form-control" id="exampleSelectGender">
-                                            <option>Lit 56</option>
-                                            <option>Lit 53 </option>
+                                            <option></option>
+                                      
                                         </select>
                                     </div>
-
 
                                 </div>
                             </div>
 
-
-
+                
                             <div class="form-group">
                                 <label for="exampleTextarea1">Autres détails</label>
                                 <textarea class="form-control" id="exampleTextarea1" rows="4"
@@ -175,24 +199,23 @@
                                 </div>
 
                             </div>
+
+                      
                             <div class="form-group">
                                 <label for="exampleInputUsername1">Désignation: (<span style="color:red">*</span>)</label>
                                 <input type="text" class="form-control" id="exampleInputUsername1"
-                                    placeholder="Par exemple: Admission en attente des patients">
+                                    placeholder="Par exemple: Admission dentaire">
                             </div>
 
-                  
-
-
                             <div class="form-group">
-                                <label for="exampleTextarea1">Description de l'admission</label>
+                                <label for="exampleTextarea1">Description de l'admission: (<span style="color:red">*</span>)</label>
                                 <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="exampleTextarea1">Symptômes</label>
+                                        <label for="exampleTextarea1">Symptômes (<span style="color:red">*</span>)</label>
                                         <textarea class="form-control" id="exampleTextarea1" rows="4"
                                             placeholder="Symptômes actuels du patient"></textarea>
                                     </div>
@@ -209,53 +232,76 @@
                             </div>
 
 
+                            
                             <div class="row">
                                 <div class="col-lg-6">
-
-                                    <div class=" form-group mg-t-20 mg-lg-t-0">
-                                        <p class="mg-b-10">Services medicaux</p>
-                                        <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
-                                            [multiple]="true">
-                                        </ng-select>
+                                    <div class="form-group ">
+                                        <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                                style="color:red">*</span>)</label>
+                                        <select class="form-control" id="exampleSelectZone">
+                                            <option>Zone A</option>
+                                            <option>Zone B</option>
+                                        </select>
                                     </div>
-
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <p class="mg-b-10">Médecin traitant</p>
-                                        <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id">
-                                        </ng-select>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Salles: (<span style="color:red">*</span>)</label>
+                                        <label for="exampleSelectGender">Salles: (<span
+                                                style="color:red">*</span>)</label>
                                         <select class="form-control" id="exampleSelectGender">
                                             <option>Salle A</option>
                                             <option>Salle B</option>
                                         </select>
                                     </div>
-
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
+                                <select class="form-control" id="exampleSelectGender">
+                                    <option>Lit 56</option>
+                                    <option>Lit 53 </option>
+                                </select>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class=" form-group mg-t-20 mg-lg-t-0">
+                                        <p class="mg-b-10">Service medical: (<span style="color:red">*</span>)</p>
+                                        <select class="form-control" id="exampleSelectGender">
+                                            <option>Dentaire</option>
+                                      
+                                        </select>
+                                        <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
+                                            [multiple]="true">
+                                        </ng-select> -->
+                                    </div>
+                                </div>
+
+                                <!-- 
+                                <div class="col-lg-6 mg-t-20 mg-lg-t-0">
+                                    <p class="mg-b-10">infirmière(s)</p>
+                                    <ng-select [items]="[
+                                      { id: 1, name: 'Option 1' },
+                                      { id: 2, name: 'Option 2' },
+                                      { id: 3, name: 'Option 3' }
+                                    ]" bindLabel="name" bindValue="id" [multiple]="true">
+                                    </ng-select>
+                                  </div> -->
+
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>Lit 56</option>
-                                            <option>Lit 53 </option>
-                                        </select>
+                                        <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
+                                        <ng-select [items]="variableName" bindLabel="name"  bindValue="id">
+                                        </ng-select>
+                                       
                                     </div>
-
 
                                 </div>
                             </div>
 
-
+                
 
                             <div class="form-group">
                                 <label for="exampleTextarea1">Autres détails</label>
@@ -268,9 +314,9 @@
                 </ngb-tabset>
 
                 <div class="d-flex justify-content-between mb-4">
-                    <button class="btn btn-dark">Annuler</button>
+                    <button class="btn btn-secondary btn-rounded  btn-medkey">Retour</button>
                     <form><!-- Votre formulaire ici --></form>
-                    <button type="submit" class="btn btn-success">Ajouter</button>
+                    <button type="submit" class="btn btn-success btn-rounded  btn-medkey">Ajouter</button>
                   </div>
 
                 </form>

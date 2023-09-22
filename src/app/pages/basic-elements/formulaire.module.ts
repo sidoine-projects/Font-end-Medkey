@@ -39,6 +39,13 @@ import { AdmissionsFacturablesComponent } from './admissions-facturables/admissi
 import { AdmissionsAttentesComponent } from './admissions-attentes/admissions-attentes.component';
 import { AdmissionsDirectesComponent } from './admissions-directes/admissions-directes.component';
 import { AllocationsLitsComponent } from './allocations-lits/allocations-lits.component';
+import { ListAllocationsLitsComponent } from './list-allocations-lits/list-allocations-lits.component';
+import { ListAdmissionAttenteDirecteComponent } from './list-admission-attente-directe/list-admission-attente-directe.component';
+import { ListTypeAdmissionComponent } from './list-type-admission/list-type-admission.component';
+import { ListLitsComponent } from './list-lits/list-lits.component';
+import { ListSallesComponent } from './list-salles/list-salles.component';
+import { ListZonesHospitalisationComponent } from './list-zones-hospitalisation/list-zones-hospitalisation.component';
+import { ListCategoriesSallesComponent } from './list-categories-salles/list-categories-salles.component';
 
 
 const routes: Routes = [
@@ -64,12 +71,19 @@ const routes: Routes = [
   { path: 'create-admission-attente', component: AdmissionsAttentesComponent },
   { path: 'admissions-directes', component: AdmissionsDirectesComponent },
   { path: 'allocations-lits', component: AllocationsLitsComponent },
+  { path: 'list-allocations-lits', component: ListAllocationsLitsComponent },
+  { path: 'list-admissions-attentes-directes', component: ListAdmissionAttenteDirecteComponent },
+  { path: 'list-types-admissions', component: ListTypeAdmissionComponent },
+  { path: 'list-lits', component: ListLitsComponent },
+  { path: 'list-salles', component: ListSallesComponent },
+  { path: 'list-categories-salles', component: ListCategoriesSallesComponent },
+  { path: 'list-zone-hospitalisation', component: ListZonesHospitalisationComponent },
 
   
 ]
 
 @NgModule({
-  declarations: [FormulaireComponent, BrancheComponent, CliniqueComponent, BanqueComponent, DelaiFacturationTardiveComponent, CasExemptionComponent, ChambreComponent, QuartiersComponent, LitsComponent, SallesFacturableComponent, LitsFacturablesComponent, ArticlesComponent, ServicesComponent, ProjetsComponent, CaissesComponent, MagasinComponent, CategorieFournisseursComponent, FournisseursComponent, VaccinsComponent, PharmacologiesComponent, ExamensGenerauxComponent, CategoriesSallesComponent, EtatTestLaboratoireComponent, CategorieEmploiComponent, RoleUserComponent, DepartementComponent, PrivilegeUtilisateurComponent, UnitesComponent, RegimesMedicauxComponent, SallesFacturablesComponent, CategoriesChambresComponent, AdmissionsFacturablesComponent, AdmissionsAttentesComponent, AdmissionsDirectesComponent, AllocationsLitsComponent],
+  declarations: [FormulaireComponent, BrancheComponent, CliniqueComponent, BanqueComponent, DelaiFacturationTardiveComponent, CasExemptionComponent, ChambreComponent, QuartiersComponent, LitsComponent, SallesFacturableComponent, LitsFacturablesComponent, ArticlesComponent, ServicesComponent, ProjetsComponent, CaissesComponent, MagasinComponent, CategorieFournisseursComponent, FournisseursComponent, VaccinsComponent, PharmacologiesComponent, ExamensGenerauxComponent, CategoriesSallesComponent, EtatTestLaboratoireComponent, CategorieEmploiComponent, RoleUserComponent, DepartementComponent, PrivilegeUtilisateurComponent, UnitesComponent, RegimesMedicauxComponent, SallesFacturablesComponent, CategoriesChambresComponent, AdmissionsFacturablesComponent, AdmissionsAttentesComponent, AdmissionsDirectesComponent, AllocationsLitsComponent, ListAllocationsLitsComponent, ListAdmissionAttenteDirecteComponent, ListTypeAdmissionComponent, ListLitsComponent, ListSallesComponent, ListZonesHospitalisationComponent, ListCategoriesSallesComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

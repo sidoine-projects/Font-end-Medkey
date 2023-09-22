@@ -1,0 +1,27 @@
+#table1 thead th,
+#table2 thead th {
+  padding: 10px !important; /* Espacement interne */
+  height: 20px !important; /* Hauteur de la ligne d'en-tête */
+  color: #000000 !important; /* Couleur du texte */
+  font-weight: bold !important; /* Gras */
+  vertical-align: middle !important; /* Centre verticalement */
+}
+
+/* Appliquer un style aux lignes paires du tbody des tables #table1 et #table2 */
+#table1 tbody tr:nth-child(odd),
+#table2 tbody tr:nth-child(odd) {
+  background-color: #f0f3f6; /* Couleur d'arrière-plan des lignes paires */
+}
+
+.custom-tab {
+  border: 1px solid rgb(231, 227, 227) !important; /* Bordure noire */
+  border-radius: 0  !important; /* Supprimez la bordure arrondie si nécessaire */
+  border-bottom: none !important; /* Supprimez la bordure inférieure */
+  box-shadow: 0 2px 4px rgba(204, 201, 201, 0.2) !important; /* Ajoute une ombre */
+
+
+}
+
+
+  
+  

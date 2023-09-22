@@ -18,7 +18,7 @@
 
 
     <li class="nav-item" [ngClass]="{ 'active': quartiers.isActive }">
-      <a class="nav-link" routerLink="/quartiers" routerLinkActive #quartiers="routerLinkActive"
+      <a class="nav-link" routerLink="/list-zone-hospitalisation" routerLinkActive #quartiers="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Zone d'hospitalisation</span>
@@ -27,7 +27,7 @@
     </li>
 
     <li class="nav-item" [ngClass]="{ 'active': categoriesChambres.isActive }">
-      <a class="nav-link" routerLink="/categories-chambres" routerLinkActive #categoriesChambres="routerLinkActive"
+      <a class="nav-link" routerLink="/list-categories-salles" routerLinkActive #categoriesChambres="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Categories Salles </span>
@@ -36,7 +36,7 @@
     </li>
 
      <li class="nav-item" [ngClass]="{ 'active': salleFacturable.isActive }">
-      <a class="nav-link" routerLink="/salles-facturables" routerLinkActive #salleFacturable="routerLinkActive"
+      <a class="nav-link" routerLink="/list-salles" routerLinkActive #salleFacturable="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Gestion des Salles </span>
@@ -45,7 +45,7 @@
     </li>  
 
     <li class="nav-item" [ngClass]="{ 'active': litsFacturables.isActive }">
-      <a class="nav-link" routerLink="/lits-facturables" routerLinkActive #litsFacturables="routerLinkActive"
+      <a class="nav-link" routerLink="/list-lits" routerLinkActive #litsFacturables="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Gestion des Lits </span>
@@ -55,7 +55,7 @@
 
 
     <li class="nav-item" [ngClass]="{ 'active': admissionsFacturables.isActive }">
-      <a class="nav-link" routerLink="/admissions-facturables" routerLinkActive #admissionsFacturables="routerLinkActive"
+      <a class="nav-link" routerLink="/list-types-admissions" routerLinkActive #admissionsFacturables="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Types Admissions  </span>
@@ -63,7 +63,7 @@
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active': admissionsAttentes.isActive }">
-      <a class="nav-link" routerLink="/admissions-attentes" routerLinkActive #admissionsAttentes="routerLinkActive"
+      <a class="nav-link" routerLink="/list-admissions-attentes-directes" routerLinkActive #admissionsAttentes="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Admissions Attentes /<br>Directes</span><br>
@@ -72,8 +72,8 @@
       </a>
     </li>
 
-    <li class="nav-item" [ngClass]="{ 'active': allocationsLits.isActive }">
-      <a class="nav-link" routerLink="/allocations-lits" routerLinkActive #allocationsLits="routerLinkActive"
+    <li class="nav-item" [ngClass]="{ 'active': listallocationsLits.isActive }">
+      <a class="nav-link" routerLink="/list-allocations-lits" routerLinkActive #listallocationsLits="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
         <span class="menu-title" translate>Allocations Lits </span>

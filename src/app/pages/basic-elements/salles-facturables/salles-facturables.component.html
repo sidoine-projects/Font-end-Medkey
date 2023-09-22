@@ -1,78 +1,98 @@
-<div class="page-header">
-    <h3 class="page-title">
-        Salles 
-    </h3>
-
-    <!-- <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:;">Salle </a></li>
-            <li class="breadcrumb-item active" aria-current="page">Créer une Salle </li>
-        </ol>
-    </nav> -->
-
-</div>
 <div class="row">
-    <div class="col-md-6 grid-margin stretch-card">
+    <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Ajouter une salle d'hospitalisation</h4>
-                <p class="card-description">
 
-                </p>
+                <h3 class="card-title text-white rounded p-3 mb-4 text-center"
+                    style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <strong>Enregistrement de salle d'hospitalisation</strong>
+                </h3>
+
+
+                <br>
                 <form class="forms-sample">
 
                     <ngb-tabset>
                         <ngb-tab title="Salle Facturable">
 
-                            <ng-template ngbTabContent >
+                            <ng-template ngbTabContent>
                                 <span class="d-block mt-5"></span>
 
-                                <div class="form-group ">
-                                    <label for="exampleSelectGender">Zone d'hospitalisation: (<span style="color:red">*</span>)</label>
-                                    <select class="form-control" id="exampleSelectZone">
-                                        <option>Zone A</option>
-                                        <option>Zone B</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleSelectGender">Catégorie de salle: (<span style="color:red">*</span>)</label>
-                                    <select class="form-control" id="exampleSelectCatgorieSalle">
-                                        <option>Privées </option>
-                                        <option>Public </option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Désignation: (<span style="color:red">*</span>)</label>
-                                    <input type="text" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Libellé">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleTextarea1">Description</label>
-                                    <textarea class="form-control" id="exampleTextarea1" rows="4"  placeholder="Décrivez brievement la salle"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Responsable de la salle: (<span style="color:red">*</span>)</label>
-                                    <input type="text" class="form-control" id="exampleInputResponsableChambre"
-                                        placeholder="Nom complet responsable">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Capacité maximale de lit</label>
-                                    <input type="text" class="form-control" id="exampleInputResponsableChambre"
-                                        placeholder="10">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Tarif: (<span style="color:red">*</span>)</label>
-                                    <input type="text" class="form-control" id="exampleInputResponsableChambre"
-                                        placeholder="Tarif">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectZone">
+                                                <option>Zone A</option>
+                                                <option>Zone B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Catégorie de salle: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectCatgorieSalle">
+                                                <option>Privées </option>
+                                                <option>Public </option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
 
 
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Désignation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Libellé">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Tarif: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputResponsableChambre"
+                                                placeholder="Tarif">
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <div class="form-group">
-                                    <label for="exampleInputUsername1">Equipements Médicaux: (<span style="color:red">*</span>)</label>
+                                    <label for="exampleTextarea1">Description: (<span style="color:red">*</span>)</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Décrivez brievement la salle"></textarea>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Responsable de la salle: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputResponsableChambre"
+                                                placeholder="Nom complet responsable">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Capacité maximale de lit: (<span style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputResponsableChambre"
+                                                placeholder="10">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label for="exampleInputUsername1">Equipements Médicaux: (<span
+                                            style="color:red">*</span>)</label>
                                     <textarea class="form-control" id="exampleTextarea1" rows="4"
                                         placeholder="Décrivez les équipements médicaux disponibles dans la chambre....."></textarea>
                                 </div>
@@ -85,51 +105,70 @@
                             </ng-template>
                         </ngb-tab>
 
-                        <ngb-tab title="Salles Non facturable">
+                        <ngb-tab title="Salle Non facturable">
 
                             <ng-template ngbTabContent>
                                 <span class="d-block mt-5"></span>
-                                <div class="form-group ">
-                                    <label for="exampleSelectGender">Zone d'hospitalisation: (<span style="color:red">*</span>)</label>
-                                    <select class="form-control" id="exampleSelectZone">
-                                        <option>Zone A</option>
-                                        <option>Zone B</option>
-                                    </select>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectZone">
+                                                <option>Zone A</option>
+                                                <option>Zone B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Catégorie de salle: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectCatgorieSalle">
+                                             
+                                                <option>Public </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Désignation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Libellé">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Responsable de la salle: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputResponsableChambre"
+                                                placeholder="Nom complet responsable">
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="exampleSelectGender">Catégorie de salle: (<span style="color:red">*</span>)</label>
-                                    <select class="form-control" id="exampleSelectCatgorieSalle">
-                                        <option>Privées </option>
-                                        <option>Public </option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Désignation: (<span style="color:red">*</span>)</label>
-                                    <input type="text" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Libellé">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleTextarea1">Description</label>
+                                    <label for="exampleTextarea1">Description: (<span style="color:red">*</span>)</label>
                                     <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
                                 </div>
 
+
                                 <div class="form-group">
-                                    <label for="exampleInputUsername1">Responsable de la salle: (<span style="color:red">*</span>)</label>
-                                    <input type="text" class="form-control" id="exampleInputResponsableChambre"
-                                        placeholder="Nom complet responsable">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputUsername1">Capacité maximale de lit</label>
+                                    <label for="exampleInputUsername1">Capacité maximale de lit: (<span style="color:red">*</span>)</label>
                                     <input type="text" class="form-control" id="exampleInputResponsableChambre"
                                         placeholder="10">
                                 </div>
 
 
                                 <div class="form-group">
-                                    <label for="exampleInputUsername1">Equipements Médicaux: (<span style="color:red">*</span>)</label>
+                                    <label for="exampleInputUsername1">Equipements Médicaux: (<span
+                                            style="color:red">*</span>)</label>
                                     <textarea class="form-control" id="exampleTextarea1" rows="4"
                                         placeholder="Décrivez les équipements médicaux disponibles dans la chambre....."></textarea>
                                 </div>
@@ -145,9 +184,12 @@
                     </ngb-tabset>
 
 
+                    <div class="d-flex justify-content-between mb-4">
+                        <button class="btn btn-secondary btn-rounded  btn-medkey">Retour</button>
+                        <form><!-- Votre formulaire ici --></form>
+                        <button type="submit" class="btn btn-success btn-rounded  btn-medkey">Ajouter</button>
+                    </div>
 
-                    <button type="submit" class="btn btn-success mr-2">AJouter</button>
-                    <button class="btn btn-danger">Annuler</button>
                 </form>
             </div>
         </div>

@@ -1,24 +1,13 @@
-<div class="page-header">
-    <h3 class="page-title">
-
-        Allocations de lit
-    </h3>
-    <!-- <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:;">Salle </a></li>
-            <li class="breadcrumb-item active" aria-current="page">Créer une Salle </li>
-        </ol>
-    </nav> -->
-</div>
 <div class="row">
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Ajouter </h4>
-                <p class="card-description">
+                <h3 class="card-title text-white rounded p-3 mb-4 text-center" style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <strong>Allocation des lits</strong>
+                  </h3>
+                  <br>
 
-                </p>
-                <form class="forms-sample ">
+                <form class="forms-sample">
 
 
                     <div class="row">
@@ -31,14 +20,11 @@
 
                         </div>
                         <div class="col-lg-6">
-
                             <div class="form-group">
-                                <label for="exampleSelectGender">Date libération du lit:</label>
+                                <label for="exampleSelectGender">Date de libération du lit: (<span style="color:red">*</span>)</label>
                                 <input class="form-control" placeholder="dd/mm/yyyy" type="date" />
                             </div>
-
                         </div>
-
                     </div>
 
                     <div class="row">
@@ -60,7 +46,8 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="exampleInputUsername1">Motif </label>
+                                <label for="exampleInputUsername1">Motif: (<span
+                                    style="color:red">*</span>) </label>
                                 <input type="text" class="form-control" id="exampleInputUsername1"
                                     placeholder="Par exemple: Intervention en urgence">
                             </div>
@@ -70,27 +57,34 @@
 
                     <div class="row">
                         <div class="col-lg-6">
+                            <div class="form-group ">
+                                <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                        style="color:red">*</span>)</label>
+                                <select class="form-control" id="exampleSelectZone">
+                                    <option>Zone A</option>
+                                    <option>Zone B</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="exampleSelectGender">Salles: (<span style="color:red">*</span>)</label>
+                                <label for="exampleSelectGender">Salle: (<span
+                                        style="color:red">*</span>)</label>
                                 <select class="form-control" id="exampleSelectGender">
                                     <option>Salle A</option>
                                     <option>Salle B</option>
                                 </select>
                             </div>
-
                         </div>
-                        <div class="col-lg-6">
+                    </div>
 
-
-                            <div class="form-group">
-                                <label for="exampleSelectGender">Lit: (<span style="color:red">*</span>)</label>
-                                <select class="form-control" id="exampleSelectGender">
-                                    <option>Lit 201</option>
-                                    <option>Lit 202</option>
-                                </select>
-                            </div>
-
-                        </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Lit: (<span style="color:red">*</span>)</label>
+                        <select class="form-control" id="exampleSelectGender">
+                            <option>Lit 201</option>
+                            <option>Lit 202</option>
+                        </select>
                     </div>
 
 
@@ -102,9 +96,9 @@
 
              
                     <div class="d-flex justify-content-between mb-4">
-                        <button class="btn btn-secondary btn-rounded btn-lg">Retour</button>
+                        <button class="btn btn-secondary btn-rounded  btn-medkey">Retour</button>
                         <form><!-- Votre formulaire ici --></form>
-                        <button type="submit" class="btn btn-success btn-rounded">Ajouter</button>
+                        <button type="submit" class="btn btn-success btn-rounded  btn-medkey">Ajouter</button>
                       </div>
 
                 </form>
