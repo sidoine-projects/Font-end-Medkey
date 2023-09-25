@@ -11,134 +11,141 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-            
-                <h3 class="card-title text-white rounded p-3 mb-4 text-center" style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+                <h3 class="card-title text-white rounded p-3 mb-4 text-center"
+                    style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                     <strong>Enregistrement de Type d'Admission</strong>
-                  </h3>
+                </h3>
                 <form class="forms-sample ">
 
-                    
-                    <ngb-tabset>
 
-                    <ngb-tab title="Admission Facturable ">
-                        <ng-template ngbTabContent>
-                            <span class="d-block mt-5"></span>
-                            <div class="row">
-                                <div class="col-lg-6">
+                    <ngb-tabset class="custom-tabset">
 
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Date d'Admission: (<span style="color:red">*</span>)</label>
-                                        <input class="form-control" placeholder="dd/mm/yyyy" type="date" />
+                        <ngb-tab title="Admission Facturable">
+                            <ng-template ngbTabContent>
+                                <span class="d-block mt-5"></span>
+                                <div class="row">
+                                    <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Date d'Admission: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" type="date" />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Patient: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>DOSSOU Jean</option>
+                                                <option>ABO Paul</option>
+                                            </select>
+                                        </div>
+
                                     </div>
 
                                 </div>
-                                <div class="col-lg-6">
 
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Patient: (<span style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>DOSSOU Jean</option>
-                                            <option>ABO Paul</option>
-                                        </select>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Désignation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Par exemple: Admission dentaire">
+                                        </div>
+
                                     </div>
+                                    <div class="col-md-6">
 
-                                </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputUsername1">Tarif: (<span style="color:red">*</span>)
+                                            </label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                                placeholder="Tarif de l'admission">
+                                        </div>
 
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputUsername1">Désignation: (<span style="color:red">*</span>)</label>
-                                        <input type="text" class="form-control" id="exampleInputUsername1"
-                                            placeholder="Par exemple: Admission dentaire">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6">
-
-                                    <div class="form-group">
-                                        <label for="exampleInputUsername1">Tarif: (<span style="color:red">*</span>) </label>
-                                        <input type="text" class="form-control" id="exampleInputUsername1"
-                                            placeholder="Tarif de l'admission">
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="exampleTextarea1">Description de l'admission: (<span style="color:red">*</span>)</label>
-                                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleTextarea1">Symptômes (<span style="color:red">*</span>)</label>
-                                        <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                            placeholder="Symptômes actuels du patient"></textarea>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleTextarea1">Allergies</label>
-                                        <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                            placeholder="Allergies connues du patient"></textarea>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group ">
-                                        <label for="exampleSelectGender">Zone d'hospitalisation: (<span
-                                                style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectZone">
-                                            <option>Zone A</option>
-                                            <option>Zone B</option>
-                                        </select>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Salles: (<span
-                                                style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>Salle A</option>
-                                            <option>Salle B</option>
-                                        </select>
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Description de l'admission: (<span
+                                            style="color:red">*</span>)</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleTextarea1">Symptômes (<span
+                                                    style="color:red">*</span>)</label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                                placeholder="Symptômes actuels du patient"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleTextarea1">Allergies</label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                                placeholder="Allergies connues du patient"></textarea>
+                                        </div>
+
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
-                                <select class="form-control" id="exampleSelectGender">
-                                    <option>Lit 56</option>
-                                    <option>Lit 53 </option>
-                                </select>
-                            </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectZone">
+                                                <option>Zone A</option>
+                                                <option>Zone B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Salles: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Salle A</option>
+                                                <option>Salle B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
+                                    <select class="form-control" id="exampleSelectGender">
+                                        <option>Lit 56</option>
+                                        <option>Lit 53 </option>
+                                    </select>
+                                </div>
 
 
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class=" form-group mg-t-20 mg-lg-t-0">
-                                        <p class="mg-b-10">Service medical: (<span style="color:red">*</span>)</p>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>Dentaire</option>
-                                      
-                                        </select>
-                                        <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class=" form-group mg-t-20 mg-lg-t-0">
+                                            <p class="mg-b-10">Service medical: (<span style="color:red">*</span>)</p>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Dentaire</option>
+
+                                            </select>
+                                            <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
                                             [multiple]="true">
                                         </ng-select> -->
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- 
+                                    <!-- 
                                 <div class="col-lg-6 mg-t-20 mg-lg-t-0">
                                     <p class="mg-b-10">infirmière(s)</p>
                                     <ng-select [items]="[
@@ -149,137 +156,142 @@
                                     </ng-select>
                                   </div> -->
 
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
-                                        <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
+                                            <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id">
                                         </ng-select> -->
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option></option>
-                                      
-                                        </select>
-                                    </div>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option></option>
 
-                                </div>
-                            </div>
+                                            </select>
+                                        </div>
 
-                
-                            <div class="form-group">
-                                <label for="exampleTextarea1">Autres détails</label>
-                                <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                    placeholder="Autres Informations Pertinentes"></textarea>
-                            </div>
-                        </ng-template>
-                    </ngb-tab>
-
-
-                    
-                    <ngb-tab title="Admission Non Facturable ">
-                        <ng-template ngbTabContent>
-                            <span class="d-block mt-5"></span>
-                            <div class="row">
-                                <div class="col-lg-6">
-
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Date d'Admission: (<span style="color:red">*</span>)</label>
-                                        <input class="form-control" placeholder="dd/mm/yyyy" type="date" />
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6">
-
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Patient: (<span style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>DOSSOU Jean</option>
-                                            <option>ABO Paul</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                      
-                            <div class="form-group">
-                                <label for="exampleInputUsername1">Désignation: (<span style="color:red">*</span>)</label>
-                                <input type="text" class="form-control" id="exampleInputUsername1"
-                                    placeholder="Par exemple: Admission dentaire">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="exampleTextarea1">Description de l'admission: (<span style="color:red">*</span>)</label>
-                                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleTextarea1">Symptômes (<span style="color:red">*</span>)</label>
-                                        <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                            placeholder="Symptômes actuels du patient"></textarea>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleTextarea1">Allergies</label>
-                                        <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                            placeholder="Allergies connues du patient"></textarea>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group ">
-                                        <label for="exampleSelectGender">Zone d'hospitalisation: (<span
-                                                style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectZone">
-                                            <option>Zone A</option>
-                                            <option>Zone B</option>
-                                        </select>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleSelectGender">Salles: (<span
-                                                style="color:red">*</span>)</label>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>Salle A</option>
-                                            <option>Salle B</option>
-                                        </select>
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Autres détails</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Autres Informations Pertinentes"></textarea>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+
+
+
+                        <ngb-tab title="Admission Non Facturable ">
+                            <ng-template ngbTabContent>
+                                <span class="d-block mt-5"></span>
+                                <div class="row">
+                                    <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Date d'Admission: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" type="date" />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Patient: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>DOSSOU Jean</option>
+                                                <option>ABO Paul</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="exampleInputUsername1">Désignation: (<span
+                                            style="color:red">*</span>)</label>
+                                    <input type="text" class="form-control" id="exampleInputUsername1"
+                                        placeholder="Par exemple: Admission dentaire">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Description de l'admission: (<span
+                                            style="color:red">*</span>)</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleTextarea1">Symptômes (<span
+                                                    style="color:red">*</span>)</label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                                placeholder="Symptômes actuels du patient"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleTextarea1">Allergies</label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                                placeholder="Allergies connues du patient"></textarea>
+                                        </div>
+
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
-                                <select class="form-control" id="exampleSelectGender">
-                                    <option>Lit 56</option>
-                                    <option>Lit 53 </option>
-                                </select>
-                            </div>
 
 
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class=" form-group mg-t-20 mg-lg-t-0">
-                                        <p class="mg-b-10">Service medical: (<span style="color:red">*</span>)</p>
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>Dentaire</option>
-                                      
-                                        </select>
-                                        <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="exampleSelectGender">Zone d'hospitalisation: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectZone">
+                                                <option>Zone A</option>
+                                                <option>Zone B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="exampleSelectGender">Salles: (<span
+                                                    style="color:red">*</span>)</label>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Salle A</option>
+                                                <option>Salle B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleSelectGender">lit: (<span style="color:red">*</span>)</label>
+                                    <select class="form-control" id="exampleSelectGender">
+                                        <option>Lit 56</option>
+                                        <option>Lit 53 </option>
+                                    </select>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class=" form-group mg-t-20 mg-lg-t-0">
+                                            <p class="mg-b-10">Service medical: (<span style="color:red">*</span>)</p>
+                                            <select class="form-control" id="exampleSelectGender">
+                                                <option>Dentaire</option>
+
+                                            </select>
+                                            <!-- <ng-select [items]="variableName" bindLabel="name" autofocus bindValue="id"
                                             [multiple]="true">
                                         </ng-select> -->
+                                        </div>
                                     </div>
-                                </div>
 
-                                <!-- 
+                                    <!-- 
                                 <div class="col-lg-6 mg-t-20 mg-lg-t-0">
                                     <p class="mg-b-10">infirmière(s)</p>
                                     <ng-select [items]="[
@@ -290,34 +302,34 @@
                                     </ng-select>
                                   </div> -->
 
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
-                                        <ng-select [items]="variableName" bindLabel="name"  bindValue="id">
-                                        </ng-select>
-                                       
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <p class="mg-b-10">Médecin traitant: (<span style="color:red">*</span>)</p>
+                                            <ng-select [items]="variableName" bindLabel="name" bindValue="id">
+                                            </ng-select>
+
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
 
-                
 
-                            <div class="form-group">
-                                <label for="exampleTextarea1">Autres détails</label>
-                                <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                    placeholder="Autres Informations Pertinentes"></textarea>
-                            </div>
-                        </ng-template>
-                    </ngb-tab>
 
-                </ngb-tabset>
+                                <div class="form-group">
+                                    <label for="exampleTextarea1">Autres détails</label>
+                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                        placeholder="Autres Informations Pertinentes"></textarea>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
 
-                <div class="d-flex justify-content-between mb-4">
-                    <button class="btn btn-secondary btn-rounded  btn-medkey">Retour</button>
-                    <form><!-- Votre formulaire ici --></form>
-                    <button type="submit" class="btn btn-success btn-rounded  btn-medkey">Ajouter</button>
-                  </div>
+                    </ngb-tabset>
+
+                    <div class="d-flex justify-content-between mb-4">
+                        <button class="btn btn-secondary btn-rounded  btn-medkey-gray">Retour</button>
+                        <form><!-- Votre formulaire ici --></form>
+                        <button type="submit" class="btn btn-success btn-rounded  btn-medkey-blue">Ajouter</button>
+                    </div>
 
                 </form>
             </div>

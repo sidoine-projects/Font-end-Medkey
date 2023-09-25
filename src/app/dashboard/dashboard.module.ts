@@ -13,6 +13,7 @@ import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { DataTablesModule } from 'angular-datatables';
 
 // AoT requires an exported function for factories
 
@@ -29,6 +30,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
+    DataTablesModule ,
     // FormulaireModule,
     RouterModule.forChild(routes),
     HttpClientModule,

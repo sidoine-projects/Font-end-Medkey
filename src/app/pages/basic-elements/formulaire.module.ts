@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+
+import { DataTablesModule } from 'angular-datatables';
 import { CommonModule } from '@angular/common';
 import { FormulaireComponent } from './form/basic-elements.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -89,6 +91,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     // Select2Module,
     NgbModule,
+    DataTablesModule,
     NgSelectModule
   ],
   providers: []

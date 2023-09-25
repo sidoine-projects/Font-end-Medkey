@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // fonctionnalité lié 
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
 import { TypographyComponent } from './typography/typography.component';
+import { DataTablesModule } from 'angular-datatables';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonsComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     NgbModule,
+    DataTablesModule,
     RouterModule.forChild(routes), // il est utilisé car on a créer un module de fonctionalités (Un module qui encapsule d'autres modules)
   ]
 })

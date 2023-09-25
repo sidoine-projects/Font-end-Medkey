@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 // import { Select2Module } from 'ng2-select2';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { DataTablesModule } from 'angular-datatables';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     // Select2Module,
     NgbModule,
+    DataTablesModule,
     NgSelectModule
   ],
   providers: []

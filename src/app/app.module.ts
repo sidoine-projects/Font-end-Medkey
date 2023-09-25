@@ -19,6 +19,7 @@ import { SettingsPanelComponent } from './shared/settings-panel/settings-panel.c
 import { FooterComponent } from './shared/footer/footer.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
+import { DataTablesModule } from "angular-datatables";
 // import { DataTablesModule } from 'angular-datatables';
 // import { BrancheComponent } from './pages/form/branche/branche.component';
 // import { FormWizardModule } from 'angular2-wizard';
@@ -54,6 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     // FormulaireModule,
     // FormWizardModule,
     // DataTablesModule,
+    DataTablesModule,
     ReactiveFormsModule,
     ChartsModule,
     TranslateModule.forRoot({

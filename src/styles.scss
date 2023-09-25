@@ -146,7 +146,7 @@ label {
 }
 
 
-.btn-medkey {
+.btn-medkey-blue {
   border: 3px solid #2365ab !important;
   border-radius: 25px !important;
   width: 200px !important;
@@ -157,10 +157,27 @@ label {
   padding: 0.685rem 0.49rem !important;
 }
 
-.btn-medkey:hover {
+.btn-medkey-blue:hover {
   /* Changez la couleur de fond au survol */
-
   color: #0d47a1 !important;
+  background-color: #ffffff !important; /* Par exemple, une couleur de fond différente au survol */
+}
+
+
+.btn-medkey-gray {
+  border: 3px solid #606264 !important;
+  border-radius: 25px !important;
+  width: 200px !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  /* Ajustez la taille du texte selon vos préférences */
+  padding: 0.685rem 0.49rem !important;
+}
+
+.btn-medkey-gray:hover {
+  /* Changez la couleur de fond au survol */
+  color: #515254 !important;
   background-color: #ffffff !important; /* Par exemple, une couleur de fond différente au survol */
 }
 
@@ -279,7 +296,102 @@ table.dataTable>tbody>tr.child span.dtr-title {
     display: none !important;
   }
 
-
-
+  .dataTables_wrapper .dt-buttons {
+    margin: 0 !important;
+  }
 
 }
+
+//  .buttons-excel,
+//  .buttons-pdf,
+//  .buttons-print,
+//  .buttons-colvis
+//   {
+//   margin-right: 0px !important;
+//   display: flex; /* Utilisation de Flexbox pour aligner horizontalement */
+//   justify-content: space-between; /* Espacement égal entre les boutons */
+// }
+
+
+/*below block of css for change style when active*/
+
+
+.paginate_button{
+  background-color: #ffffff !important;
+ cursor: pointer !important;
+ }
+ 
+ .paginate_button:hover{
+   background: #286db5 !important;
+ }
+ .paginate_button.current {
+   background-color: #286db5!important;
+   color: #ffffff !important; /* Couleur du texte du numéro de page actuel */
+
+ }
+
+ .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+
+  color:white !important;
+ }
+
+
+
+ .dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+  background: #ffffff !important;
+  cursor: pointer !important;
+  color: #000000 !important; /* Couleur du texte des boutons "Précédent" et "Suivant" (par défaut) */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+  background: #286db5 !important;
+  color: #ffffff !important; /* Couleur du texte des boutons "Précédent" et "Suivant" (blanc) au survol */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next.current {
+  background: #286db5 !important;
+  color: #000000 !important; /* Couleur du texte des boutons "Précédent" et "Suivant" (par défaut) */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:focus,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:focus,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:active {
+  background: #286db5 !important; /* Couleur de fond lors du focus ou de l'activation (bleu dans cet exemple) */
+  color: #ffffff !important; /* Couleur du texte lors du focus ou de l'activation (blanc dans cet exemple) */
+}
+
+
+.nav-link.active.custom-tab {
+  background-color: #286db5 !important; /* Couleur de fond sombre */
+  color: #fff !important; /* Couleur du texte en surbrillance */
+}
+
+/* Style pour les onglets inactifs */
+.nav-link.custom-tab {
+  background-color: #e7ecef !important; /* Couleur de fond blanche par défaut */
+  color: #000 !important; /* Couleur du texte par défaut */
+}
+
+
+
+
+/* Style pour les onglets inactifs */
+.custom-tabset .nav-tabs .nav-link.active,
+.custom-tabset .nav-tabs .nav-item.show .nav-link {
+    color: #ffffff !important; /* Couleur du texte pour l'onglet actif */
+    font-weight: bold !important;
+    background-color: #286db5 !important; /* Couleur de fond pour l'onglet actif */
+    // border-color: #89c7fd #2b61ea #5f9ac1 !important; /* Couleur de la bordure pour l'onglet actif */
+}
+
+.custom-tabset .nav-tabs .nav-link {
+  color: #000000 !important; /* Couleur du texte pour les onglets non actifs */
+  font-weight: bold !important;
+  background-color: #e7ecef !important; /* Couleur de fond pour les onglets non actifs */
+}
+
+
