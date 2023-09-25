@@ -3,22 +3,20 @@
         <div class="card">
             <div class="card-body">
 
-
                 <div class="container">
-
 
                     <h3 class="card-title text-white rounded p-2 mb-2 text-center"
                         style="background-color: #2365ab; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                         <strong>Liste des allocations de lit</strong>
                     </h3>
 
-
                     <div style="text-align: right !important;" class=" py-2">
                         <button class=" btn btn-primary btn-medkey-blue" (click)="ouvrirAjout()">Ajouter</button>
                     </div>
 
-
-                    <table  datatable [dtOptions]="dtOptions" class="table table-striped nowrap row-border table-bordered table-sm row-border hover " width="100%" cellspacing="0">
+                    <table datatable [dtOptions]="dtOptions"
+                        class="table table-striped nowrap row-border table-bordered table-sm row-border hover "
+                        width="100%" cellspacing="0">
                         <!-- <table datatable [dtOptions]="dtOptions"  class="table-responsive"> -->
 
                         <thead>
@@ -30,7 +28,7 @@
                                 <th>Motif</th>
                                 <th>Zone</th>
                                 <th>Salle</th>
-                                <th>lit</th>
+                                <th>Lit</th>
                                 <th style="text-align: center !important;">Action</th>
                             </tr>
                         </thead>
@@ -106,9 +104,6 @@
                         </tbody>
                     </table>
                 </div>
-
-
-
 
             </div>
         </div>
