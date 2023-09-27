@@ -1,0 +1,12 @@
+// label:not(.form-check-label):not(.custom-file-label) {
+//   font-weight: inherit !important;
+// }
+// .bien {
+//   font-weight: inherit !important;
+// }
+.custom-file-label::after {
+  content: "Parcourir...";
+  background-color: #2773b3; /* Marron neutre */
+  color: #fff; /* Couleur du texte (blanc dans cet exemple) */
+  border-color: #2773b3; /* Couleur de la bordure (si nécessaire) */
+}

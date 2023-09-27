@@ -1,0 +1,100 @@
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h3
+          class="card-title text-white rounded p-3 mb-4 text-center"
+          style="
+            background-color: #2365ab;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <strong>Enregistrer une maladie</strong>
+        </h3>
+        <form (submit)="ajouterPatient()" enctype="multipart/form-data">
+          <!-- <div class="card-body"> -->
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nom" class="bien" style="font-weight: bold"
+                >Nom maladie<span style="color: red"> *</span> :</label
+              >
+              <input
+                id="nom"
+                type="text"
+                class="form-control"
+                required
+                placeholder="Nom de la maladie..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label
+                for="situationMatrimoniale"
+                style="font-weight: bold"
+                class="bien"
+                >Diagnostic <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="situationMatrimoniale"
+                type="text"
+                class="form-control"
+                placeholder="Diagnostic de la maladie"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="prenom" style="font-weight: bold"
+                >Symptômes <span style="color: red"> *</span>:</label
+              >
+              <input
+                id="prenom"
+                type="text"
+                class="form-control"
+                required
+                placeholder="Symptômes de la maladie..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="pays" style="font-weight: bold"
+                >Traitements<span style="color: red"> *</span> :</label
+              >
+              <input
+                id="pays"
+                type="text"
+                class="form-control"
+                placeholder="Traitements pour la maladie"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="autresInformations" style="font-weight: bold"
+                >Description de la maladie:</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Autres informations complémentaires du patient..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="d-flex justify-content-between mb-4">
+            <button class="btn btn-secondary btn-rounded btn-lg btn-medkey-gray">Retour</button>
+            <form><!-- Votre formulaire ici --></form>
+            <button type="submit" class="btn btn-success btn-rounded btn-medkey-blue">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

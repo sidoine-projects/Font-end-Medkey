@@ -16,7 +16,7 @@
   -ms-transition:background $action-transition-duration $action-transition-timing-function;
 
   .navbar-brand {
-    width: 110px;
+    // width: 110px;
   }
   .navbar-brand-wrapper {
     transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;

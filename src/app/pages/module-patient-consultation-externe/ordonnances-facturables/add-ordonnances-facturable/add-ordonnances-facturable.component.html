@@ -1,0 +1,203 @@
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h3
+          class="card-title text-white rounded p-3 mb-4 text-center"
+          style="
+            background-color: #2365ab;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <strong>Enregistrer une ordonnance facturable</strong>
+        </h3>
+        <form (submit)="ajouterIntervention()">
+          <!-- <div class="card-body"> -->
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nom" class="bien" style="font-weight: bold"
+                >Libellé de l'ordonnance facturable<span style="color: red">
+                  *</span
+                >
+                :</label
+              >
+              <input
+                id="nom"
+                type="text"
+                class="form-control"
+                placeholder="Libellé de la procédure..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label
+                for="situationMatrimoniale"
+                style="font-weight: bold"
+                class="bien"
+                >Fréquence de la prise
+                <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="situationMatrimoniale"
+                type="text"
+                class="form-control"
+                placeholder="Fréquence de la prise..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label
+                for="situationMatrimoniale"
+                style="font-weight: bold"
+                class="bien"
+                >Patient <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="situationMatrimoniale"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">Patient 1</option>
+                <option value="medecintraitant2">Patient 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="pays" style="font-weight: bold"
+                >Prix de l'ordonnance
+                <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="pays"
+                type="number"
+                placeholder="1500..."
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label
+                for="situationMatrimoniale"
+                style="font-weight: bold"
+                class="bien"
+                >Médecin <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="situationMatrimoniale"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">Médecin 1</option>
+                <option value="medecintraitant2">Médecin 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="departement" style="font-weight: bold"
+                >Nom médicament <span style="color: red"> *</span>:</label
+              >
+              <select
+                id="situationMatrimoniale"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">Médicament 1</option>
+                <option value="medecintraitant2">Médicament 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="email" style="font-weight: bold"
+                >Quantité <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="email"
+                type="text"
+                placeholder="5..."
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="age" style="font-weight: bold"
+                >Durée de prescription
+                <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="age"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="telephone" style="font-weight: bold"
+                >Date de la prescription
+                <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="telephone"
+                type="date"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="telephone" style="font-weight: bold"
+                >Date facturable <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="telephone"
+                type="date"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="donneesBiologiques" style="font-weight: bold"
+                >Description :</label
+              >
+              <textarea
+                id="donneesBiologiques"
+                class="form-control"
+                rows="6"
+                placeholder="Description ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="autresInformations" style="font-weight: bold"
+                >Indication médicale :</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Indication médicale ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="d-flex justify-content-between mb-4">
+            <button class="btn btn-secondary btn-rounded btn-lg btn-medkey-gray">Retour</button>
+            <form><!-- Votre formulaire ici --></form>
+            <button type="submit" class="btn btn-success btn-rounded btn-medkey-blue">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

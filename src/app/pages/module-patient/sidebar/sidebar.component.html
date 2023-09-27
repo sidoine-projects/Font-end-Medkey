@@ -1,0 +1,92 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav" style="font-weight: 400 !important; ">
+
+    <li class="nav-item navbar-brand-mini-wrapper">
+      <!-- <a class="nav-link navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
+      <!-- <a class="nav-link navbar-brand brand-logo-mini" href="index.html">Medkay</a> -->
+
+    </li>
+
+    <li class="nav-item" [ngClass]="{ 'active': tableauHome.isActive }">
+      <a class="nav-link" routerLink="/module-patient-dashboard" routerLinkActive
+        #tableauHome="routerLinkActive" [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Tableau de bord</span>
+        <i class="icon-screen-desktop menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: patient.isActive }">
+      <a class="nav-link" routerLink="/patient" routerLinkActive #patient="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Patients</span>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: indigence.isActive }">
+      <a class="nav-link" routerLink="/indigence" routerLinkActive #indigence="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Indigences </span>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: compagnie.isActive }">
+      <a class="nav-link" routerLink="/compagnie" routerLinkActive #compagnie="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Compagnies </span>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: assurance.isActive }">
+      <a class="nav-link" routerLink="/assurance" routerLinkActive #assurance="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Assurances </span>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: assurancepatient.isActive }">
+      <a class="nav-link" routerLink="/assurancepatient" routerLinkActive #assurancepatient="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Assurance patient </span>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: indigencepatient.isActive }">
+      <a class="nav-link" routerLink="/indigencepatient" routerLinkActive #indigencepatient="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Indigences Patient </span>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: forfaitfacturation.isActive }">
+      <a class="nav-link" routerLink="/forfaitfacturation" routerLinkActive #forfaitfacturation="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Forfait Facturation</span>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: exemption.isActive }">
+      <a class="nav-link" routerLink="/exemption" routerLinkActive #exemption="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Exemption</span>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: rendezvous.isActive }">
+      <a class="nav-link" routerLink="/rendezvous" routerLinkActive #rendezvous="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Rendez-vous</span>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: visite.isActive }">
+      <a class="nav-link" routerLink="/visite" routerLinkActive #visite="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Type visite </span>
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: relation.isActive }">
+      <a class="nav-link" routerLink="/relation" routerLinkActive #relation="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Type relation </span>
+      </a>
+    </li>
+
+
+  </ul>
+</nav>

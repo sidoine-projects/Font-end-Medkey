@@ -1,0 +1,109 @@
+<!-- <div class="page-header">
+    <h3 class="page-title">
+
+        Admissions
+    </h3>
+
+</div> -->
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <div class="container">
+          <h3
+            class="card-title text-white rounded p-3 mb-4 text-center"
+            style="
+              background-color: #2365ab;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <strong>Liste des exemptions</strong>
+          </h3>
+
+          <div style="text-align: right !important">
+            <a
+              routerLink="/ajout-exemption"
+              routerLinkActive
+              #exemption="routerLinkActive"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="btn btn-primary btn-rounded btn-lg non btn-medkey-blue"
+              >Ajouter
+
+              <!-- <i class="icon-book-open menu-icon"></i> -->
+            </a>
+
+            <!-- <button class="btn btn-primary">Ajouter</button> -->
+          </div>
+
+          <table  datatable   [dtOptions]="dtOptions" class="table table-striped nowrap row-border table-bordered table-sm row-border hover " width="100%" cellspacing="0">
+
+            <thead>
+              <tr>
+                <!-- <th style="font-weight: bold !important">Date</th> -->
+                <th>Patient</th>
+                <th>Date debut</th>
+                <th>Date fin</th>
+                <th style="text-align: center !important">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ASSOGBA</td>
+                <td>20/06/2023</td>
+                <td>23/09/2023</td>
+
+                <td class="text-center" size="sm">
+                  <a routerLink="/" class="btn btn-gray btn-sm">
+                    <i class="mdi mdi-eye"></i>
+                  </a>
+                  <a routerLink="/" class="btn btn-success btn-sm">
+                    <!-- <i class="mdi  mdi-lead-pencil text-white"></i> -->
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  </a>
+                  <a routerLink="/" class="btn btn-danger btn-sm">
+                    <i class="mdi mdi-delete"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>ASSOGBA</td>
+                <td>20/06/2023</td>
+                <td>23/09/2023</td>
+
+                <td class="text-center" size="sm">
+                  <a routerLink="/" class="btn btn-gray btn-sm">
+                    <i class="mdi mdi-eye"></i>
+                  </a>
+                  <a routerLink="/" class="btn btn-success btn-sm">
+                    <!-- <i class="mdi  mdi-lead-pencil text-white"></i> -->
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  </a>
+                  <a routerLink="/" class="btn btn-danger btn-sm">
+                    <i class="mdi mdi-delete"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>ASSOGBA</td>
+                <td>20/06/2023</td>
+                <td>23/09/2023</td>
+                <td class="text-center" size="sm">
+                  <a routerLink="/" class="btn btn-gray btn-sm">
+                    <i class="mdi mdi-eye"></i>
+                  </a>
+                  <a routerLink="/" class="btn btn-success btn-sm">
+                    <!-- <i class="mdi  mdi-lead-pencil text-white"></i> -->
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  </a>
+                  <a routerLink="/" class="btn btn-danger btn-sm">
+                    <i class="mdi mdi-delete"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

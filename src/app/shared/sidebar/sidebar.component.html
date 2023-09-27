@@ -6,80 +6,20 @@
       <!-- <a class="nav-link navbar-brand brand-logo-mini" href="index.html">Medkay</a> -->
     </li>
 
-
-    <li class="nav-item" [ngClass]="{ 'active': dashboard.isActive }">
-      <a class="nav-link" routerLink="/dashboard" routerLinkActive #dashboard="routerLinkActive"
+<!-- 
+    <li class="nav-item" [ngClass]="{ 'active': dashboardHome.isActive }">
+      <a class="nav-link" routerLink="" routerLinkActive #dashboardHome="routerLinkActive"
         [routerLinkActiveOptions]="{exact:
         true}">
-        <span class="menu-title" translate style="font-size: 1rem !important;">Tableau de bord</span>
+        <span class="menu-title" translate style="font-size: 1rem !important;">Dashboard Home</span>
         <i class="icon-screen-desktop menu-icon " ></i>
       </a>
-    </li>
+    </li> -->
 
 
-    <li class="nav-item" [ngClass]="{ 'active': quartiers.isActive }">
-      <a class="nav-link" routerLink="/list-zone-hospitalisation" routerLinkActive #quartiers="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Zone d'hospitalisation</span>
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li>
-
-    <li class="nav-item" [ngClass]="{ 'active': categoriesChambres.isActive }">
-      <a class="nav-link" routerLink="/list-categories-salles" routerLinkActive #categoriesChambres="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Categories Salles </span>
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li>
-
-     <li class="nav-item" [ngClass]="{ 'active': salleFacturable.isActive }">
-      <a class="nav-link" routerLink="/list-salles" routerLinkActive #salleFacturable="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Gestion des Salles </span>
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li>  
-
-    <li class="nav-item" [ngClass]="{ 'active': litsFacturables.isActive }">
-      <a class="nav-link" routerLink="/list-lits" routerLinkActive #litsFacturables="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Gestion des Lits </span>
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li> 
 
 
-    <li class="nav-item" [ngClass]="{ 'active': admissionsFacturables.isActive }">
-      <a class="nav-link" routerLink="/list-types-admissions" routerLinkActive #admissionsFacturables="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Types Admissions  </span>
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li>
-    <li class="nav-item" [ngClass]="{ 'active': admissionsAttentes.isActive }">
-      <a class="nav-link" routerLink="/list-admissions-attentes-directes" routerLinkActive #admissionsAttentes="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Admissions Attentes /<br>Directes</span><br>
-       
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li>
 
-    <li class="nav-item" [ngClass]="{ 'active': listallocationsLits.isActive }">
-      <a class="nav-link" routerLink="/list-allocations-lits" routerLinkActive #listallocationsLits="routerLinkActive"
-        [routerLinkActiveOptions]="{exact:
-        true}">
-        <span class="menu-title" translate>Allocations Lits </span>
-        <!-- <i class="icon-book-open menu-icon"></i> -->
-      </a>
-    </li>
 
    
 

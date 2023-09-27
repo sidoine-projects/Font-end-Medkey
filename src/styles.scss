@@ -160,7 +160,8 @@ label {
 .btn-medkey-blue:hover {
   /* Changez la couleur de fond au survol */
   color: #0d47a1 !important;
-  background-color: #ffffff !important; /* Par exemple, une couleur de fond différente au survol */
+  background-color: #ffffff !important;
+  /* Par exemple, une couleur de fond différente au survol */
 }
 
 
@@ -178,7 +179,8 @@ label {
 .btn-medkey-gray:hover {
   /* Changez la couleur de fond au survol */
   color: #515254 !important;
-  background-color: #ffffff !important; /* Par exemple, une couleur de fond différente au survol */
+  background-color: #ffffff !important;
+  /* Par exemple, une couleur de fond différente au survol */
 }
 
 html,
@@ -302,96 +304,115 @@ table.dataTable>tbody>tr.child span.dtr-title {
 
 }
 
-//  .buttons-excel,
-//  .buttons-pdf,
-//  .buttons-print,
-//  .buttons-colvis
-//   {
-//   margin-right: 0px !important;
-//   display: flex; /* Utilisation de Flexbox pour aligner horizontalement */
-//   justify-content: space-between; /* Espacement égal entre les boutons */
+
+
+
+// .paginate_button {
+//   background-color: #ffffff !important;
+//   cursor: pointer !important;
+// }
+
+// .paginate_button:hover {
+//   background: #286db5 !important;
 // }
 
 
-/*below block of css for change style when active*/
+// .dataTables_wrapper .dataTables_paginate .paginate_button  {
+//   background-color: rgb(51, 49, 49) !important;
+//   color: rgb(255, 255, 255) !important;
+//   border: 1px solid transparent !important;
+// }
 
+/* Modifie la couleur du texte au survol (hover) */
+// .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+//   background-color: red !important;
+//   // Votre couleur de survol ici ;
+//   color: red !important
+// }
 
-.paginate_button{
-  background-color: #ffffff !important;
- cursor: pointer !important;
- }
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: #fff !important;
+  background: #286db5 !important;
+  border: 1px solid transparent !important;
  
- .paginate_button:hover{
-   background: #286db5 !important;
- }
- .paginate_button.current {
-   background-color: #286db5!important;
-   color: #ffffff !important; /* Couleur du texte du numéro de page actuel */
+}
 
- }
+.dataTables_info{
+  color: black !important;
+}
 
- .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+.mat-body, .mat-body-1, .mat-typography {
+  color: white !important;
 
-  color:white !important;
- }
+}
 
 
-
- .dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous,
 .dataTables_wrapper .dataTables_paginate .paginate_button.next {
-  background: #ffffff !important;
+   background: #f1f3f4 !important;
   cursor: pointer !important;
-  color: #000000 !important; /* Couleur du texte des boutons "Précédent" et "Suivant" (par défaut) */
+  color: rgb(0, 0, 0) !important;
+    border: 1px solid transparent !important;
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
-.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
-  background: #286db5 !important;
-  color: #ffffff !important; /* Couleur du texte des boutons "Précédent" et "Suivant" (blanc) au survol */
-}
+// .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
+// .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+//   background: #286db5  !important;
+//   color: #fff !important;
+//   border: 1px solid transparent !important;
+// }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button.previous.current,
-.dataTables_wrapper .dataTables_paginate .paginate_button.next.current {
-  background: #286db5 !important;
-  color: #000000 !important; /* Couleur du texte des boutons "Précédent" et "Suivant" (par défaut) */
-}
+// .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  
+//   color: #ffffff !important;
+//   border: 1px solid transparent !important;
+//   background: #286db5 !important;
+//   box-shadow: none !important;
+// }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button.previous:focus,
+
 .dataTables_wrapper .dataTables_paginate .paginate_button.previous:active,
-.dataTables_wrapper .dataTables_paginate .paginate_button.next:focus,
 .dataTables_wrapper .dataTables_paginate .paginate_button.next:active {
-  background: #286db5 !important; /* Couleur de fond lors du focus ou de l'activation (bleu dans cet exemple) */
-  color: #ffffff !important; /* Couleur du texte lors du focus ou de l'activation (blanc dans cet exemple) */
+  background: #286db5  !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+
 }
+
 
 
 .nav-link.active.custom-tab {
-  background-color: #286db5 !important; /* Couleur de fond sombre */
-  color: #fff !important; /* Couleur du texte en surbrillance */
+  background-color: #286db5 !important;
+  /* Couleur de fond sombre */
+  color: #fff !important;
+  /* Couleur du texte en surbrillance */
 }
 
 /* Style pour les onglets inactifs */
 .nav-link.custom-tab {
-  background-color: #e7ecef !important; /* Couleur de fond blanche par défaut */
-  color: #000 !important; /* Couleur du texte par défaut */
+  background-color: #e7ecef !important;
+  /* Couleur de fond blanche par défaut */
+  color: #000 !important;
+  /* Couleur du texte par défaut */
 }
-
-
 
 
 /* Style pour les onglets inactifs */
 .custom-tabset .nav-tabs .nav-link.active,
 .custom-tabset .nav-tabs .nav-item.show .nav-link {
-    color: #ffffff !important; /* Couleur du texte pour l'onglet actif */
-    font-weight: bold !important;
-    background-color: #286db5 !important; /* Couleur de fond pour l'onglet actif */
-    // border-color: #89c7fd #2b61ea #5f9ac1 !important; /* Couleur de la bordure pour l'onglet actif */
+  color: #ffffff !important;
+  /* Couleur du texte pour l'onglet actif */
+  font-weight: bold !important;
+  background-color: #286db5 !important;
+  /* Couleur de fond pour l'onglet actif */
+  // border-color: #89c7fd #2b61ea #5f9ac1 !important; /* Couleur de la bordure pour l'onglet actif */
 }
 
 .custom-tabset .nav-tabs .nav-link {
-  color: #000000 !important; /* Couleur du texte pour les onglets non actifs */
+  color: #000000 !important;
+  /* Couleur du texte pour les onglets non actifs */
   font-weight: bold !important;
-  background-color: #e7ecef !important; /* Couleur de fond pour les onglets non actifs */
+  background-color: #e7ecef !important;
+  /* Couleur de fond pour les onglets non actifs */
 }
-
-

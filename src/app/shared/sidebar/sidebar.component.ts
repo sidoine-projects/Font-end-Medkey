@@ -3,25 +3,12 @@ import {TranslateService} from '@ngx-translate/core';
 
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'app-sidebar-home',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
 
 export class SidebarComponent implements OnInit {
-  public uiBasicCollapsed = false;
-  public uiAdvancedCollapsed = false;
-  public formsCollapsed = false;
-  // public formulaireCollapsed = false;
-  public editorsCollapsed = false;
-  public chartsCollapsed = false;
-  public tablesCollapsed = false;
-  public iconsCollapsed = false;
-  public mapsCollapsed = false;
-  public userPagesCollapsed = false;
-  public errorCollapsed = false;
-  public generalPagesCollapsed = false;
-  public eCommerceCollapsed = false;
   
   constructor(translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language

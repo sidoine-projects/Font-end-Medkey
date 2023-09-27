@@ -1,0 +1,193 @@
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h3
+          class="card-title text-white rounded p-3 mb-4 text-center"
+          style="
+            background-color: #2365ab;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <strong>Enregistrer une procédure</strong>
+        </h3>
+        <form (submit)="ajouterIntervention()">
+          <!-- <div class="card-body"> -->
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nom" class="bien" style="font-weight: bold"
+                >Libellé de la procédure<span style="color: red"> *</span>
+                :</label
+              >
+              <input
+                id="nom"
+                type="text"
+                class="form-control"
+                placeholder="Libellé de la procédure..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label
+                for="situationMatrimoniale"
+                style="font-weight: bold"
+                class="bien"
+                >Date de procédure <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="situationMatrimoniale"
+                type="date"
+                class="form-control"
+                placeholder="Date de procédure..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="medecin" style="font-weight: bold"
+                >Catégorie de la procédure
+                <span style="color: red"> *</span>:</label
+              >
+              <select
+                id="medecin"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">
+                  Catégorie de la procédure 1
+                </option>
+                <option value="medecintraitant2">
+                  Catégorie de la procédure 2
+                </option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="pays" style="font-weight: bold"
+                >Durée estimée <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="pays"
+                type="date"
+                placeholder="Durée estimée..."
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="email" style="font-weight: bold"
+                >Patient <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="email"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="pays1">Patient 1</option>
+                <option value="pays2">Patient 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="departement" style="font-weight: bold"
+                >Coût de la procédure <span style="color: red"> *</span>:</label
+              >
+              <input
+                id="departement"
+                type="number"
+                class="form-control"
+                placeholder="Coût de la procédure..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="email" style="font-weight: bold"
+                >Médecin traitant <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="email"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="pays1">Médecin 1</option>
+                <option value="pays2">Médecin 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="age" style="font-weight: bold"
+                >Statut de la procédure
+                <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="age"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="pays1">Statut 1</option>
+                <option value="pays2">Statut 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="telephone" style="font-weight: bold"
+                >Salle de procédure <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="telephone"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="arrondissement1">Salle de procédure 1</option>
+                <option value="arrondissement2">Salle de procédure 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="donneesBiologiques" style="font-weight: bold"
+                >Personnel médical impliqué
+                <span style="color: red"> *</span> :</label
+              >
+              <textarea
+                id="donneesBiologiques"
+                class="form-control"
+                rows="6"
+                placeholder="Personnel médical impliqué ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="autresInformations" style="font-weight: bold"
+                >Commentaires additionnels :</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Commentaires additionnels ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="d-flex justify-content-between mb-4">
+            <button class="btn btn-secondary btn-rounded btn-lg btn-medkey-gray">Retour</button>
+            <form><!-- Votre formulaire ici --></form>
+            <button type="submit" class="btn btn-success btn-rounded btn-medkey-blue">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

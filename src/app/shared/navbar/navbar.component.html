@@ -1,26 +1,29 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-  
-  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" style="background-color: white; border: 1px solid #ccc; box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);">
+
+  <!-- <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" -->
+  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+
+    style="background-color: white; border: 1px solid #ccc; box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);">
 
     <!-- <a class="navbar-brand brand-logo" href="index.html"> <span class="text-white font-weight-bold" style="font-size:30px" ><span style="color:rgb(49, 121, 246)">MED</span> <span style="color:rgb(216, 31, 31)">KEY</span> </span> 
     <img src="assets/images/logo.png" alt="logo" class="logo-dark" /> -->
     <!-- <img src="assets/images/logo-light.svg" alt="logo-light" class="logo-light"> 
     </a> -->
 
-    <a class="brand-logo" href="index.html">
+    <a class="navbar-brand brand-logo" [routerLink]="'/home'">
+      <span><img src="assets/images/logo.PNG" alt="" class="" style="width: 195px !important; height: 61px !important;" /></span>
 
-      <img src="assets/images/logo.png" alt="logo" class="logo-white"  style="width: 195px !important" />
       <!-- <img src="assets/images/logo-light.svg" alt="logo-light" class="logo-light"> -->
     </a>
 
-    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+    <a class="navbar-brand brand-logo-mini" href="index.html">
+      <img src="assets/images/logo.PNG" alt="logo" />
+    </a>
     <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize" (click)="toggleSidebar()">
         <span class="icon-menu"></span>
       </button> -->
 
   </div>
-
-
 
 
   <div class="navbar-menu-wrapper d-flex align-items-center justify-content-center ">
@@ -40,19 +43,17 @@
     </ul> -->
     <div class="mx-auto row align-items-center" >
       <h4 style="text-align: center !important; margin: 0; padding: 0;" class="mb-0 font-weight-bold text-center">
-        GESTION DES HOSPITALISATIONS 
+       GESTION DES HOSPITALISATIONS
+   
       </h4>
     </div>
-<!--     
-    <div class="mx-auto align-items-center">
-      <h4 style="text-align: center !important;" class="mb-0 font-weight-bold text-center">
-        GESTION DES HOSPITALISATIONS
-      </h4>
-    </div> -->
+
+       
+
 
 
     <!-- <ul class="navbar-nav navbar-nav-left"> -->
-      <ul class="navbar-nav ">
+    <ul class="navbar-nav ">
       <!-- <form class="search-form d-none d-md-block" action="#">
         <i class="icon-magnifier"></i>
         <input type="search" class="form-control" placeholder="{{'Search Here' | translate }}" title="{{'Search Here' | translate }}">

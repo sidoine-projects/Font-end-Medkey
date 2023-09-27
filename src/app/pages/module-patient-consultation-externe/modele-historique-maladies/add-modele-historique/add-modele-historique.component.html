@@ -1,0 +1,112 @@
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h3
+          class="card-title text-white rounded p-3 mb-4 text-center"
+          style="
+            background-color: #2365ab;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <strong>Enregistrer un modèle historique de maladie</strong>
+        </h3>
+        <form (submit)="ajouterIntervention()">
+          <!-- <div class="card-body"> -->
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="nom" class="bien" style="font-weight: bold"
+                >Nom modèle<span style="color: red"> *</span> :</label
+              >
+              <input
+                id="nom"
+                type="text"
+                class="form-control"
+                placeholder="Nom modèle..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="donneesBiologiques" style="font-weight: bold"
+                >Histoire des médicament
+                <span style="color: red"> *</span> :</label
+              >
+              <textarea
+                id="donneesBiologiques"
+                class="form-control"
+                rows="6"
+                placeholder="Histoire des médicament ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="autresInformations" style="font-weight: bold"
+                >Histoire des allergies
+                <span style="color: red"> *</span> :</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Histoire des allergies ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="donneesBiologiques" style="font-weight: bold"
+                >Histoire des vaccinations
+                <span style="color: red"> *</span> :</label
+              >
+              <textarea
+                id="donneesBiologiques"
+                class="form-control"
+                rows="6"
+                placeholder="Histoire des vaccinations ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="autresInformations" style="font-weight: bold"
+                >Histoire des maladies récurrentes
+                <span style="color: red"> *</span> :</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Histoire des allergies ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="autresInformations" style="font-weight: bold"
+                >Notes complémentaires:</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Notes complémentaires..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="d-flex justify-content-between mb-4">
+            <button class="btn btn-secondary btn-rounded btn-lg btn-medkey-gray">Retour</button>
+            <form><!-- Votre formulaire ici --></form>
+            <button type="submit" class="btn btn-success btn-rounded btn-medkey-blue">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

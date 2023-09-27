@@ -1,0 +1,154 @@
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h3
+          class="card-title text-white rounded p-3 mb-4 text-center"
+          style="
+            background-color: #2365ab;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <strong>Enregistrer un article facturable</strong>
+        </h3>
+        <form (submit)="ajouterPatient()" enctype="multipart/form-data">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nom" style="font-weight: bold"
+                >Code article facturable<span style="color: red"> *</span>
+                :</label
+              >
+              <input
+                id="nom"
+                type="text"
+                class="form-control"
+                placeholder="Code facturation article..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="numero" style="font-weight: bold"
+                >Stock disponible <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="numero"
+                type="number"
+                class="form-control"
+                required
+                placeholder="Stock disponible..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="pourcentage" style="font-weight: bold"
+                >Titre article facturable
+                <span style="color: red"> *</span>:</label
+              >
+              <input
+                id="pourcentage"
+                type="text"
+                class="form-control"
+                placeholder="Titre article facturable..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="compa" style="font-weight: bold"
+                >Date de péremption <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="compa"
+                type="date"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="pourcentage" style="font-weight: bold"
+                >Fournisseur <span style="color: red"> *</span>:</label
+              >
+              <input
+                id="pourcentage"
+                type="text"
+                class="form-control"
+                placeholder="Fournisseur..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="compa" style="font-weight: bold"
+                >Tarif<span style="color: red"> *</span> :</label
+              >
+              <input
+                id="compa"
+                type="text"
+                class="form-control"
+                placeholder="Tarif..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nom" style="font-weight: bold"
+                >Emplacement<span style="color: red"> *</span> :</label
+              >
+              <select
+                id="nom"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">Emplacement 1</option>
+                <option value="medecintraitant2">Emplacement 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="nom" style="font-weight: bold"
+                >Statut d'article <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="nom"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">Statut 1</option>
+                <option value="medecintraitant2">Statut 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="nom" style="font-weight: bold"
+                >Détails fournisseurs :</label
+              >
+              <textarea
+                id="nom"
+                type="text"
+                rows="6"
+                class="form-control"
+                placeholder="Description..."
+                style="border: 1px solid #a8adb3 !important"
+              >
+              </textarea>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <button class="btn btn-secondary btn-rounded btn-lg btn-medkey-gray">Retour</button>
+            <form><!-- Votre formulaire ici --></form>
+            <button type="submit" class="btn btn-success btn-rounded btn-medkey-blue">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+/* Style par défaut des modules */
+.grid-margin {
+    transition: transform 0.3s ease; /* Transition pour un effet de zoom en douceur et un changement de couleur en douceur */
+  }
+  
+  /* Au survol, zoom et changez la couleur en bleu */
+  .grid-margin:hover {
+    transform: scale(1.05); /* Zoom de 5% au survol */
+    cursor: pointer; /* Changez le curseur en une main pointant pour indiquer l'interaction */
+  }
+  
+  .bis:hover {
+    background-color: #2365ab; /* Couleur avec une transparence de 50% au survol */
+    cursor: pointer; /* Changez le curseur en une main pointant pour indiquer l'interaction */
+  }
+  /* Style de base pour la classe .bis */
+  .bis {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition en douceur pour l'effet de survol */
+  }
+  
+  /* Au survol, change la couleur de fond de l'image en blanc */
+  .bis:hover img {
+    filter: invert(
+      100%
+    ); /* Change la luminosité de l'image à 0, la rendant blanche */
+  }
+  
+  /* Au survol, change la couleur du texte en blanc */
+  .bis:hover h2 {
+    color: white; /* Change la couleur du texte en blanc */
+  }
+  
+  /* Au survol des boutons "Accéder au module", appliquez les styles */
+  .bis:hover .bien {
+    border: 2px solid #007bff; /* Bordure bleue */
+    background-color: #fff; /* Fond blanc */
+    color: #007bff; /* Texte bleu */
+  }
+  

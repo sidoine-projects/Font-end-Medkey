@@ -1,0 +1,217 @@
+<div class="row" style="margin-top: -25px">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <h3
+          class="card-title text-white rounded p-3 mb-4 text-center"
+          style="
+            background-color: #2365ab;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <strong>Enregistrer une intervention ou opération</strong>
+        </h3>
+        <form (submit)="ajouterIntervention()">
+          <!-- <div class="card-body"> -->
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nom" class="bien" style="font-weight: bold"
+                >Patient<span style="color: red"> *</span> :</label
+              >
+              <select
+                id="nom"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="patient1">Patient 1</option>
+                <option value="patient2">Patient 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label
+                for="situationMatrimoniale"
+                style="font-weight: bold"
+                class="bien"
+                >Date et heure de planification
+                <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="situationMatrimoniale"
+                type="datetime-local"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="medecin" style="font-weight: bold"
+                >Médecin traitant <span style="color: red"> *</span>:</label
+              >
+              <select
+                id="medecin"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="medecintraitant1">Médecin traitant 1</option>
+                <option value="medecintraitant2">Médecin traitant 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="pays" style="font-weight: bold"
+                >Type d'intervention <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="pays"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="pays1">Chirurgie</option>
+                <option value="pays2">Obstétrique et gynécologie</option>
+                <option value="pays2">Pédiatrie</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="email" style="font-weight: bold"
+                >Salle d'opération :</label
+              >
+              <select
+                id="email"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="pays1">Salle 1</option>
+                <option value="pays2">Salle 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="departement" style="font-weight: bold"
+                >Complications <span style="color: red"> *</span>:</label
+              >
+              <input
+                id="departement"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="dateNaissance" style="font-weight: bold"
+                >Frais associés <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="dateNaissance"
+                type="number"
+                class="form-control"
+                required
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="age" style="font-weight: bold"
+                >Équipe médicale <span style="color: red"> *</span> :</label
+              >
+              <input
+                id="age"
+                type="text"
+                class="form-control"
+                placeholder="Équipe médicale..."
+                style="border: 1px solid #a8adb3 !important"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="telephone" style="font-weight: bold"
+                >Équipement médical requis
+                <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="telephone"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="arrondissement1">Equipement médical 1</option>
+                <option value="arrondissement2">Equipement médical 2</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="pays" style="font-weight: bold"
+                >Statut d'intervention
+                <span style="color: red"> *</span> :</label
+              >
+              <select
+                id="pays"
+                type="text"
+                class="form-control"
+                style="border: 1px solid #a8adb3 !important"
+              >
+                <option value="pays1">Statut 1</option>
+                <option value="pays1">Statut 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label for="autresInformations" style="font-weight: bold"
+                >Résultats de l'intervention
+                <span style="color: red"> *</span> :</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Résultats de l'intervention ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="donneesBiologiques" style="font-weight: bold"
+                >Notes sur l'intervention :</label
+              >
+              <textarea
+                id="donneesBiologiques"
+                class="form-control"
+                rows="6"
+                placeholder="Notes sur l'intervention ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="autresInformations" style="font-weight: bold"
+                >Suivi post-opératoire
+                <span style="color: red"> *</span>:</label
+              >
+              <textarea
+                id="autresInformations"
+                rows="6"
+                class="form-control"
+                placeholder="Suivi post-opératoire ..."
+                style="border: 1px solid #a8adb3 !important"
+              ></textarea>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="d-flex justify-content-between mb-4">
+            <button class="btn btn-secondary btn-rounded btn-lg btn-medkey-gray">Retour</button>
+            <form><!-- Votre formulaire ici --></form>
+            <button type="submit" class="btn btn-success btn-rounded btn-medkey-blue">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,12 +14,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 // import { FormulaireComponent } from './pages/basic-elements/form/basic-elements.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { SidebarComponent as SidebarComponent1 } from './shared/sidebar/sidebar.component';
+import { SidebarComponent as SidebarComponent2 } from './pages/module-hospitalisation/sidebar/sidebar.component';
+import { SidebarComponent as SidebarComponent3 } from './pages/module-patient/sidebar/sidebar.component';
+import { SidebarComponent as SidebarComponent4 } from './pages/module-patient-consultation-externe/sidebar/sidebar.component';
 import { SettingsPanelComponent } from './shared/settings-panel/settings-panel.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
 import { DataTablesModule } from "angular-datatables";
+// import { HomeComponent } from './pages/home/home.component';
 // import { DataTablesModule } from 'angular-datatables';
 // import { BrancheComponent } from './pages/form/branche/branche.component';
 // import { FormWizardModule } from 'angular2-wizard';
@@ -33,18 +37,24 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
+
   declarations: [
     AppComponent,
     NavbarComponent,
-    SidebarComponent,
+    SidebarComponent1,
+    SidebarComponent2,
+    SidebarComponent3,
+    SidebarComponent4,
     // FormulaireComponent,
 
     SettingsPanelComponent,
     FooterComponent,
     SpinnerComponent,
     ContentAnimateDirective,
+    // HomeComponent,
     // BrancheComponent
   ],
+
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -66,6 +76,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }
     })
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

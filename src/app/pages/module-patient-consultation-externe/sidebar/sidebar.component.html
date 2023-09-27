@@ -1,0 +1,131 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav" style="font-weight: 400 !important; ">
+
+    <li class="nav-item navbar-brand-mini-wrapper">
+      <!-- <a class="nav-link navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
+      <!-- <a class="nav-link navbar-brand brand-logo-mini" href="index.html">Medkay</a> -->
+
+    </li>
+
+    <li class="nav-item" [ngClass]="{ 'active': tableauHome.isActive }">
+      <a class="nav-link" routerLink="/module-patient-consulation-externe-dashbord" routerLinkActive
+        #tableauHome="routerLinkActive" [routerLinkActiveOptions]="{exact:
+        true}">
+        <span class="menu-title" translate>Tableau de bord</span>
+        <i class="icon-screen-desktop menu-icon"></i>
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: intervention.isActive }">
+      <a class="nav-link" routerLink="/intervention" routerLinkActive #intervention="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Interventions</span><br />
+      </a>
+    </li>
+
+    <li class="nav-item" [ngClass]="{ active: maladie.isActive }">
+      <a class="nav-link" routerLink="/maladie" routerLinkActive #maladie="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Maladies</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: categorieplainte.isActive }">
+      <a class="nav-link" routerLink="/categorieplainte" routerLinkActive #categorieplainte="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Catégories de plainte</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: plainte.isActive }">
+      <a class="nav-link" routerLink="/plainte" routerLinkActive #plainte="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Plaintes</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: pharmacologie.isActive }">
+      <a class="nav-link" routerLink="/pharmacologie" routerLinkActive #pharmacologie="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>pharmacologie</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: examen.isActive }">
+      <a class="nav-link" routerLink="/examen" routerLinkActive #examen="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Examens Généraux</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: categorieprocedure.isActive }">
+      <a class="nav-link" routerLink="/categorieprocedure" routerLinkActive #categorieprocedure="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Catégories de procédure</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: procedure.isActive }">
+      <a class="nav-link" routerLink="/procedure" routerLinkActive #procedure="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Procédures</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: mhm.isActive }">
+      <a class="nav-link" routerLink="/mhm" routerLinkActive #mhm="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>MHM</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: examenphysique.isActive }">
+      <a class="nav-link" routerLink="/examenphysique" routerLinkActive #examenphysique="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Examen Physique</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: inventairemedicament.isActive }">
+      <a class="nav-link" routerLink="/inventairemedicament" routerLinkActive #inventairemedicament="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Inventaire médicament</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: ordonnancefacturable.isActive }">
+      <a class="nav-link" routerLink="/ordonnancefacturable" routerLinkActive #ordonnancefacturable="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Ordonnances facturables</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: inventairepetite.isActive }">
+      <a class="nav-link" routerLink="/inventairepetite" routerLinkActive #inventairepetite="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Petites Salles Soins</span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: artfactumineur.isActive }">
+      <a class="nav-link" routerLink="/artfactumineur" routerLinkActive #artfactumineur="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Factures théâtres </span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: enquete.isActive }">
+      <a class="nav-link" routerLink="/enquete" routerLinkActive #enquete="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Enquêtes Interventions </span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: rapport.isActive }">
+      <a class="nav-link" routerLink="/rapport" routerLinkActive #rapport="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Rapports </span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: facturable.isActive }">
+      <a class="nav-link" routerLink="/facturable" routerLinkActive #facturable="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Article facturable </span><br />
+      </a>
+    </li>
+    <li class="nav-item" [ngClass]="{ active: medicament.isActive }">
+      <a class="nav-link" routerLink="/medicament" routerLinkActive #medicament="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="menu-title" translate>Médicaments </span><br />
+      </a>
+    </li>
+
+
+  </ul>
+</nav>
